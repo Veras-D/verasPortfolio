@@ -1,9 +1,20 @@
-#### List
-- Plataforma de Recrutamento de pessoas LGBT+
-- Agencia de viagens
-- Financial project
-- Sistema de cadastro
-- Dashboard
-- Software arduino
-- Discord e telegram bot
-- Analise + Modelo IA
+#### Services
+- Design
+  - Logo Design
+  - Brand Manual
+  - Website Design
+- Automations
+  - Bots 
+  - Softwate Automation
+  - Test Automation
+- Analytics
+  - Dashboards
+  - Data Analysis
+- AI Building
+  - AI Chatbot SUport
+  - Preditive Models
+  - Classifier Models
+- Software Develoment
+  - Websites
+  - Mobile Apps
+  - Desktop Apps
