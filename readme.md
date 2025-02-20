@@ -11,7 +11,7 @@
   - Dashboards
   - Data Analysis
 - AI Building
-  - AI Chatbot SUport
+  - AI Chatbot Suport
   - Preditive Models
   - Classifier Models
 - Software Develoment
