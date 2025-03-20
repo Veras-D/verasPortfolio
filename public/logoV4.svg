@@ -1,0 +1,38 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 907 907" width="907" height="907">
+	<title>Group 3</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-81.266,133.296,-116.921,-71.283,472.191,35.678)">
+			<stop offset="0" stop-color="#a564ff"/>
+			<stop offset="1" stop-color="#7440b1"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(114.437,0,0,20.772,535.705,682.624)">
+			<stop offset="0" stop-color="#7440b1"/>
+			<stop offset=".437" stop-color="#8833ff"/>
+			<stop offset="1" stop-color="#fba757"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(83.954,126.43,-48.798,32.404,476.237,285.842)">
+			<stop offset="0" stop-color="#7440b1"/>
+			<stop offset="1" stop-color="#11b573"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: #7440b1 } 
+		.s1 { fill: url(#g1) } 
+		.s2 { fill: #ffffff } 
+		.s3 { fill: #1d152c } 
+		.s4 { fill: #fba757 } 
+		.s5 { fill: url(#g2) } 
+		.s6 { fill: url(#g3) } 
+	</style>
+	<path class="s0" d="m452.8 3l432.7 749.6h-865.5z"/>
+	<path class="s1" d="m454.4 0l112.3 194.9h-224.9z"/>
+	<path class="s0" d="m514.7 104.9l51.5 89.5-103.5 1.5z"/>
+	<path class="s2" d="m463.6 193.9l259.6 449.7h-519.3z"/>
+	<path class="s3" d="m463.7 307.8l193.9 335.8h-387.7z"/>
+	<path fill-rule="evenodd" class="s4" d="m463.7 574.7c-22.1 0-39.9-17.9-39.9-40 0-22.1 17.8-40 39.9-40 22.2 0 40 17.9 40 40 0 22.1-17.8 40-40 40z"/>
+	<path class="s2" d="m826.1 643.1l59.4 109.5h-120.9l31-56.5z"/>
+	<path class="s2" d="m764.6 752.6l31-56.5h-278.9l-87.4 56.5z"/>
+	<path class="s4" d="m463.7 194.4h103.2l259.1 448.7-30.4 53h-175.4l49.4-52.5h53.5z"/>
+	<path class="s5" d="m572.2 668.6h114.9l-22 27.5h-129.4z"/>
+	<path fill-rule="evenodd" class="s6" d="m573.2 383.8l-76.5-132.4-33 56.4 74.5 131z"/>
+</svg>
