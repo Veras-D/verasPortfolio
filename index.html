@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta property="og:title" content="Vivi Veras | Full-Stack Developer" />
         <meta
             property="og:description"
@@ -15,182 +16,118 @@
         <meta property="og:url" content="https://veras-app.netlify.app/" />
         <meta property="og:type" content="website" />
 
-        <title>Vivi Veras | Full-Stack Developer</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <link rel="icon" href="public/favicon.png" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <div class="logo">
-                    <div class="logo-icon">
-                        <img src="public/logoV4.svg" alt="logo" />
+    <title>Vivi Veras | Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="public/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"><img src="public/logoV4.svg" alt="logo"></div>
+                <div class="logo-text">VERAS</div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/veras-d/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/veras-d" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/5598987216857" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-avatar">
+                        <div class="pixel-avatar"><img src="public/logo.png" alt="logo"></div>
                     </div>
+                    <div class="hero-text">
+                        <h1 class="pixel-title">VIVI <span class="highlight">VERAS</span></h1>
+                        <h2>FULL-STACK DEVELOPER</h2>
+                        <p>Building beautiful, functional, and scalable applications</p>
+                        <div class="cta-buttons">
+                            <a href="projects.html" class="btn primary">MY PROJECTS</a>
+                            <a href="contact.html" class="btn secondary">CONTACT ME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="skills">
+                <h2>MY SKILLS</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python Automation</h3>
+                        <p>Building bots and automation tools to streamline processes</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                        <h3>UI Design</h3>
+                        <p>Creating beautiful and functional interfaces with Figma</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h3>Front-end Development</h3>
+                        <p>Building responsive applications with JS, TS, Angular and React</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Back-end Development</h3>
+                        <p>Creating robust APIs with Nest and Spring</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Data Science</h3>
+                        <p>Analyzing and visualizing data with Python</p>
+                    </div>
+                    <div class="skill-card future">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <h3>DevOps</h3>
+                        <p>Working with Docker, AWS and GitHub Actions (Coming soon)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>LOOKING FOR A FULL-STACK DEVELOPER?</h2>
+                <p>Let's work together to build something amazing</p>
+                <a href="contact.html" class="btn primary">GET IN TOUCH</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon"><img src="public/logoV4.svg" alt="logo"></div>
                     <div class="logo-text">VERAS</div>
                 </div>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="Pages/projects/index.html">Projects</a>
-                        </li>
-                        <li><a href="Pages/about/index.html">About Me</a></li>
-                        <li><a href="Pages/contact/index.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/veras-d/" target="_blank"
-                        ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <a href="https://github.com/veras-d/" target="_blank"
-                        ><i class="fab fa-github"></i
-                    ></a>
-                    <a href="https://wa.me/5598987216857" target="_blank"
-                        ><i class="fab fa-whatsapp"></i
-                    ></a>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
                 </div>
-            </header>
-
-            <main>
-                <div class="hero">
-                    <div class="hero-content">
-                        <div class="hero-avatar">
-                            <div class="pixel-avatar">
-                                <img src="public/logo.png" alt="logo" />
-                            </div>
-                        </div>
-                        <div class="hero-text">
-                            <h1 class="pixel-title">
-                                VIVI <span class="highlight">VERAS</span>
-                            </h1>
-                            <h2>FULL-STACK DEVELOPER</h2>
-                            <p>
-                                Building beautiful, functional, and scalable
-                                applications
-                            </p>
-                            <div class="cta-buttons">
-                                <a
-                                    href="Pages/projects/index.html"
-                                    class="btn primary"
-                                    >MY PROJECTS</a
-                                >
-                                <a
-                                    href="Pages/contact/index.html"
-                                    class="btn secondary"
-                                    >CONTACT ME</a
-                                >
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/veras-d/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/veras-d" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/5598987216857" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 VERAS. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 
-                <section class="skills">
-                    <h2>MY SKILLS</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <h3>Python Automation</h3>
-                            <p>
-                                Building bots and automation tools to streamline
-                                processes
-                            </p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-figma"></i>
-                            </div>
-                            <h3>UI Design</h3>
-                            <p>
-                                Creating beautiful and functional interfaces
-                                with Figma
-                            </p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <h3>Front-end Development</h3>
-                            <p>
-                                Building responsive applications with JS, TS,
-                                Angular and React
-                            </p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <h3>Back-end Development</h3>
-                            <p>Creating robust APIs with Nest and Spring</p>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Data Science</h3>
-                            <p>Analyzing and visualizing data with Python</p>
-                        </div>
-                        <div class="skill-card future">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <h3>DevOps</h3>
-                            <p>
-                                Working with Docker, AWS and GitHub Actions
-                                (Coming soon)
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="cta-section">
-                    <h2>LOOKING FOR A FULL-STACK DEVELOPER?</h2>
-                    <p>Let's work together to build something amazing</p>
-                    <a href="Pages/contact/index.html" class="btn primary"
-                        >GET IN TOUCH</a
-                    >
-                </section>
-            </main>
-
-            <footer>
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <img src="public/logoV4.svg" alt="logo" />
-                        </div>
-                        <div class="logo-text">VERAS</div>
-                    </div>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="Pages/projects/index.html">Projects</a>
-                        <a href="Pages/about/index.html">About Me</a>
-                        <a href="Pages/contact/index.html">Contact</a>
-                    </div>
-                    <div class="footer-social">
-                        <a
-                            href="https://linkedin.com/in/veras-d/"
-                            target="_blank"
-                            ><i class="fab fa-linkedin"></i
-                        ></a>
-                        <a href="https://github.com/veras-d/" target="_blank"
-                            ><i class="fab fa-github"></i
-                        ></a>
-                        <a href="https://wa.me/5598987216857" target="_blank"
-                            ><i class="fab fa-whatsapp"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 VERAS. All rights reserved.</p>
-                </div>
-            </footer>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
