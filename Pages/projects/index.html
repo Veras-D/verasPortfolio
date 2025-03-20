@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivi Veras | Projects - Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">VV</div>
+                <div class="logo-text">Veras</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-header">
+                <h1>MY <span class="highlight">PROJECTS</span></h1>
+                <p>A showcase of my work and technical expertise</p>
+            </section>
+
+            <section class="project-filters">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Front-end</button>
+                    <button class="filter-btn" data-filter="backend">Back-end</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="data">Data Science</button>
+                    <button class="filter-btn" data-filter="ui">UI Design</button>
+                </div>
+            </section>
+
+            <section class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="frontend,ui">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/8A2BE2/FFFFFF?text=E-commerce+UI" alt="E-commerce UI">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                        <h3>E-commerce Platform</h3>
+                        <p>A complete e-commerce solution with responsive design, user authentication, and payment integration.</p>
+                        <button class="btn view-details" data-project="ecommerce">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="backend,automation">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/6A1B9A/FFFFFF?text=API+Service" alt="API Service">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Nest.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3>RESTful API Service</h3>
+                        <p>A scalable REST API with authentication, rate limiting, and comprehensive documentation.</p>
+                        <button class="btn view-details" data-project="api">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="automation,data">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/9D4EDD/FFFFFF?text=Data+Automation" alt="Data Automation">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3>Data Processing Pipeline</h3>
+                        <p>Automated data collection, cleaning, and analysis pipeline for business intelligence.</p>
+                        <button class="btn view-details" data-project="data-pipeline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="frontend,ui">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/8A2BE2/FFFFFF?text=Dashboard+UI" alt="Dashboard UI">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Charts.js</span>
+                        </div>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Interactive dashboard with real-time data visualization and customizable widgets.</p>
+                        <button class="btn view-details" data-project="dashboard">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/6A1B9A/FFFFFF?text=Social+Media+Bot" alt="Social Media Bot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3>Social Media Automation</h3>
+                        <p>Bot for scheduling posts, analyzing engagement, and generating reports across platforms.</p>
+                        <button class="btn view-details" data-project="social-bot">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="frontend,backend">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/9D4EDD/FFFFFF?text=Task+Manager" alt="Task Manager">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <h3>Task Management App</h3>
+                        <p>Full-stack application for managing tasks, projects, and team collaboration.</p>
+                        <button class="btn view-details" data-project="task-manager">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Modal -->
+            <div class="project-modal" id="project-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-body">
+                        <!-- Content will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <section class="cta-section">
+                <h2>INTERESTED IN WORKING TOGETHER?</h2>
+                <p>Let's discuss how I can help bring your ideas to life</p>
+                <a href="contact.html" class="btn primary">CONTACT ME</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">VV</div>
+                    <div class="logo-text">Veras</div>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Vivi Veras. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
