@@ -164,7 +164,6 @@
     transform: translateX(5px);
 }
 
-/* FAQ Section */
 .faq-section {
     padding: 60px 0;
 }
@@ -250,7 +249,6 @@
     line-height: 1.6;
 }
 
-/* Form Success Message */
 .form-success {
     display: none;
     text-align: center;
@@ -275,7 +273,6 @@
     margin-bottom: 20px;
 }
 
-/* Responsive Styles for Contact Page */
 @media (max-width: 992px) {
     .contact-container {
         flex-direction: column;

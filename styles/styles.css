@@ -349,6 +349,18 @@ footer {
     font-size: 0.9rem;
 }
 
+.icon-ts {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../public/typescript-50.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;

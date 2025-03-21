@@ -15,7 +15,6 @@
     margin: 0 auto;
 }
 
-/* Project Filters */
 .project-filters {
     margin-bottom: 40px;
 }
@@ -42,7 +41,6 @@
     border-color: var(--primary-color);
 }
 
-/* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

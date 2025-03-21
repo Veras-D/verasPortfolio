@@ -67,116 +67,116 @@ function setupProjectModal() {
     const detailBtns = document.querySelectorAll('.view-details');
     
     // Project data - this would normally come from a database or API
-    const projectData = {
-        'ecommerce': {
-            title: 'E-commerce Platform',
-            subtitle: 'Full-stack web application',
-            icon: 'fa-shopping-cart',
-            image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=E-commerce+Platform',
-            description: 'A comprehensive e-commerce solution built with React and TypeScript for the frontend and a secure REST API using Node.js and MongoDB for the backend. The platform includes user authentication, product management, shopping cart functionality, and secure payment processing.',
-            technologies: ['React', 'TypeScript', 'Redux', 'Node.js', 'MongoDB', 'Stripe API', 'AWS S3', 'CSS Modules'],
-            features: ['Responsive design for all devices', 'User authentication and profile management', 'Advanced product filtering and search', 'Shopping cart and wishlist', 'Secure payment processing', 'Order tracking', 'Admin dashboard for inventory management'],
-            challenges: ['Implementing a scalable state management solution', 'Optimizing image loading for performance', 'Ensuring secure payment processing', 'Creating a responsive design that works on all devices'],
-            gallery: [
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Product+Page',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Cart',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Checkout',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Admin'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
-        'api': {
-            title: 'RESTful API Service',
-            subtitle: 'Backend infrastructure',
-            icon: 'fa-server',
-            image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=API+Service',
-            description: 'A robust and scalable RESTful API built with Nest.js and TypeScript. This API provides a secure and efficient backend service for various client applications, with features such as authentication, authorization, rate limiting, and comprehensive logging.',
-            technologies: ['Nest.js', 'TypeScript', 'MongoDB', 'JWT', 'Docker', 'Swagger', 'Jest'],
-            features: ['JWT authentication and role-based authorization', 'Comprehensive API documentation with Swagger', 'Request validation and error handling', 'Rate limiting and security features', 'Containerized with Docker for easy deployment', 'Extensive test coverage with Jest'],
-            challenges: ['Designing a clean and maintainable architecture', 'Implementing efficient error handling', 'Ensuring proper security measures', 'Creating comprehensive documentation'],
-            gallery: [
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=API+Structure',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Swagger+Docs',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Authentication',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Testing'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
-        'data-pipeline': {
-            title: 'Data Processing Pipeline',
-            subtitle: 'Automated data workflow',
-            icon: 'fa-database',
-            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Data+Pipeline',
-            description: 'An automated data processing pipeline built with Python that collects, cleans, and analyzes data from various sources. The system extracts insights and generates reports automatically, saving hours of manual work.',
-            technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Airflow', 'SQL', 'AWS Lambda'],
-            features: ['Automated data collection from multiple sources', 'Data cleaning and normalization', 'Statistical analysis and insight generation', 'Automated report generation', 'Scheduled execution with Apache Airflow', 'Error handling and notification system'],
-            challenges: ['Handling inconsistent data formats', 'Optimizing performance for large datasets', 'Creating meaningful visualizations', 'Setting up reliable scheduling'],
-            gallery: [
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Data+Flow',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Analytics',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Reports',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workflow'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
-        'dashboard': {
-            title: 'Analytics Dashboard',
-            subtitle: 'Interactive data visualization',
-            icon: 'fa-chart-line',
-            image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=Analytics+Dashboard',
-            description: 'An interactive analytics dashboard built with Angular that provides real-time data visualization and insights. The dashboard includes customizable widgets, filters, and export options to help users analyze data effectively.',
-            technologies: ['Angular', 'TypeScript', 'Chart.js', 'RxJS', 'Firebase', 'SCSS'],
-            features: ['Real-time data updates', 'Interactive charts and graphs', 'Customizable dashboard layout', 'Data filtering and sorting', 'Export options (PDF, CSV, Excel)', 'User preference saving'],
-            challenges: ['Implementing real-time data synchronization', 'Creating responsive and interactive visualizations', 'Optimizing performance with large datasets', 'Designing an intuitive user interface'],
-            gallery: [
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Dashboard+Overview',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Charts',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Custom+Widgets',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Reports'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
-        'social-bot': {
-            title: 'Social Media Automation',
-            subtitle: 'Python-based automation tools',
-            icon: 'fa-robot',
-            image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=Social+Media+Bot',
-            description: 'A collection of Python-based automation tools for social media management. These tools help schedule posts, analyze engagement, and generate reports across various social media platforms, streamlining the social media workflow.',
-            technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Social Media APIs', 'Pandas', 'Matplotlib'],
-            features: ['Post scheduling across multiple platforms', 'Engagement analytics and reporting', 'Content suggestion based on trending topics', 'Automated response to comments and messages', 'Hashtag optimization', 'Competitor analysis'],
-            challenges: ['Navigating different social media APIs', 'Handling rate limits and authentication', 'Creating reliable web scraping solutions', 'Developing accurate analytics algorithms'],
-            gallery: [
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Scheduling',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Analytics',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Content+Suggestions',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Reporting'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
-        'mobile-app': {
-            title: 'Fitness Tracking App',
-            subtitle: 'Cross-platform mobile application',
-            icon: 'fa-mobile-alt',
-            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Fitness+App',
-            description: 'A cross-platform mobile application built with React Native that helps users track their fitness goals, workouts, and nutrition. The app includes features such as workout planning, progress tracking, and social sharing.',
-            technologies: ['React Native', 'Redux', 'Firebase', 'Expo', 'Node.js', 'Express', 'MongoDB'],
-            features: ['Personalized workout plans', 'Progress tracking with charts and statistics', 'Nutrition logging and analysis', 'Social sharing and challenges', 'Integration with fitness devices', 'Offline functionality', 'Push notifications and reminders'],
-            challenges: ['Creating a consistent experience across platforms', 'Implementing complex animations and transitions', 'Managing state across the application', 'Ensuring offline functionality', 'Optimizing battery usage'],
-            gallery: [
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Dashboard',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workout+Tracker',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Nutrition+Log',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Progress+Charts'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        }
-    };
+    // const projectData = {
+    //     'ecommerce': {
+    //         title: 'E-commerce Platform',
+    //         subtitle: 'Full-stack web application',
+    //         icon: 'fa-shopping-cart',
+    //         image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=E-commerce+Platform',
+    //         description: 'A comprehensive e-commerce solution built with React and TypeScript for the frontend and a secure REST API using Node.js and MongoDB for the backend. The platform includes user authentication, product management, shopping cart functionality, and secure payment processing.',
+    //         technologies: ['React', 'TypeScript', 'Redux', 'Node.js', 'MongoDB', 'Stripe API', 'AWS S3', 'CSS Modules'],
+    //         features: ['Responsive design for all devices', 'User authentication and profile management', 'Advanced product filtering and search', 'Shopping cart and wishlist', 'Secure payment processing', 'Order tracking', 'Admin dashboard for inventory management'],
+    //         challenges: ['Implementing a scalable state management solution', 'Optimizing image loading for performance', 'Ensuring secure payment processing', 'Creating a responsive design that works on all devices'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Product+Page',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Cart',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Checkout',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Admin'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     },
+    //     'api': {
+    //         title: 'RESTful API Service',
+    //         subtitle: 'Backend infrastructure',
+    //         icon: 'fa-server',
+    //         image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=API+Service',
+    //         description: 'A robust and scalable RESTful API built with Nest.js and TypeScript. This API provides a secure and efficient backend service for various client applications, with features such as authentication, authorization, rate limiting, and comprehensive logging.',
+    //         technologies: ['Nest.js', 'TypeScript', 'MongoDB', 'JWT', 'Docker', 'Swagger', 'Jest'],
+    //         features: ['JWT authentication and role-based authorization', 'Comprehensive API documentation with Swagger', 'Request validation and error handling', 'Rate limiting and security features', 'Containerized with Docker for easy deployment', 'Extensive test coverage with Jest'],
+    //         challenges: ['Designing a clean and maintainable architecture', 'Implementing efficient error handling', 'Ensuring proper security measures', 'Creating comprehensive documentation'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=API+Structure',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Swagger+Docs',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Authentication',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Testing'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     },
+    //     'data-pipeline': {
+    //         title: 'Data Processing Pipeline',
+    //         subtitle: 'Automated data workflow',
+    //         icon: 'fa-database',
+    //         image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Data+Pipeline',
+    //         description: 'An automated data processing pipeline built with Python that collects, cleans, and analyzes data from various sources. The system extracts insights and generates reports automatically, saving hours of manual work.',
+    //         technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Airflow', 'SQL', 'AWS Lambda'],
+    //         features: ['Automated data collection from multiple sources', 'Data cleaning and normalization', 'Statistical analysis and insight generation', 'Automated report generation', 'Scheduled execution with Apache Airflow', 'Error handling and notification system'],
+    //         challenges: ['Handling inconsistent data formats', 'Optimizing performance for large datasets', 'Creating meaningful visualizations', 'Setting up reliable scheduling'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Data+Flow',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Analytics',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Reports',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workflow'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     },
+    //     'dashboard': {
+    //         title: 'Analytics Dashboard',
+    //         subtitle: 'Interactive data visualization',
+    //         icon: 'fa-chart-line',
+    //         image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=Analytics+Dashboard',
+    //         description: 'An interactive analytics dashboard built with Angular that provides real-time data visualization and insights. The dashboard includes customizable widgets, filters, and export options to help users analyze data effectively.',
+    //         technologies: ['Angular', 'TypeScript', 'Chart.js', 'RxJS', 'Firebase', 'SCSS'],
+    //         features: ['Real-time data updates', 'Interactive charts and graphs', 'Customizable dashboard layout', 'Data filtering and sorting', 'Export options (PDF, CSV, Excel)', 'User preference saving'],
+    //         challenges: ['Implementing real-time data synchronization', 'Creating responsive and interactive visualizations', 'Optimizing performance with large datasets', 'Designing an intuitive user interface'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Dashboard+Overview',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Charts',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Custom+Widgets',
+    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Reports'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     },
+    //     'social-bot': {
+    //         title: 'Social Media Automation',
+    //         subtitle: 'Python-based automation tools',
+    //         icon: 'fa-robot',
+    //         image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=Social+Media+Bot',
+    //         description: 'A collection of Python-based automation tools for social media management. These tools help schedule posts, analyze engagement, and generate reports across various social media platforms, streamlining the social media workflow.',
+    //         technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Social Media APIs', 'Pandas', 'Matplotlib'],
+    //         features: ['Post scheduling across multiple platforms', 'Engagement analytics and reporting', 'Content suggestion based on trending topics', 'Automated response to comments and messages', 'Hashtag optimization', 'Competitor analysis'],
+    //         challenges: ['Navigating different social media APIs', 'Handling rate limits and authentication', 'Creating reliable web scraping solutions', 'Developing accurate analytics algorithms'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Scheduling',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Analytics',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Content+Suggestions',
+    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Reporting'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     },
+    //     'mobile-app': {
+    //         title: 'Fitness Tracking App',
+    //         subtitle: 'Cross-platform mobile application',
+    //         icon: 'fa-mobile-alt',
+    //         image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Fitness+App',
+    //         description: 'A cross-platform mobile application built with React Native that helps users track their fitness goals, workouts, and nutrition. The app includes features such as workout planning, progress tracking, and social sharing.',
+    //         technologies: ['React Native', 'Redux', 'Firebase', 'Expo', 'Node.js', 'Express', 'MongoDB'],
+    //         features: ['Personalized workout plans', 'Progress tracking with charts and statistics', 'Nutrition logging and analysis', 'Social sharing and challenges', 'Integration with fitness devices', 'Offline functionality', 'Push notifications and reminders'],
+    //         challenges: ['Creating a consistent experience across platforms', 'Implementing complex animations and transitions', 'Managing state across the application', 'Ensuring offline functionality', 'Optimizing battery usage'],
+    //         gallery: [
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Dashboard',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workout+Tracker',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Nutrition+Log',
+    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Progress+Charts'
+    //         ],
+    //         demoUrl: '#',
+    //         codeUrl: '#'
+    //     }
+    // };
     
     // Open modal when view details button is clicked
     detailBtns.forEach(btn => {
