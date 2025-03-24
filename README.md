@@ -2,7 +2,9 @@
 
 A personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer.
 
-![Portfolio Preview](https://i.imgur.com/myUjO60.png)
+<div align="center">
+    <img src="https://i.imgur.com/ObosWhQ.png" alt="Website Preview">
+</div>
 
 ## 📋 Overview
 
