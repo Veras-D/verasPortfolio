@@ -360,6 +360,16 @@ footer {
     vertical-align: middle;
 }
 
+.icon-cs {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../public/c-sharp-50.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
 
 @media (max-width: 768px) {
     header {
