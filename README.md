@@ -1,3 +1,7 @@
+<div align="center"">
+  <img src="https://i.imgur.com/NSfHb6D.png" style="height: 160px;" />
+</div>
+
 # Vivi Veras Portfolio
 
 A personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer.
