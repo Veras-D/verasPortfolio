@@ -255,6 +255,7 @@
     border-radius: 10px;
     margin-bottom: 25px;
     object-fit: cover;
+    max-width: 500px;
 }
 
 .modal-project-description {

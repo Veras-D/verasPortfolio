@@ -12,6 +12,9 @@ function initProjectsPage() {
     
     // Animate project cards on scroll
     animateProjectCards();
+
+    // Set up image viewer
+    setupImageViewer();
 }
 
 // Project Filtering System
@@ -140,23 +143,33 @@ function setupProjectModal() {
             demoUrl: '#',
             codeUrl: '#'
         },
-        'dashboard': {
-            title: 'Analytics Dashboard',
-            subtitle: 'Interactive data visualization',
-            icon: 'fa-chart-line',
-            image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=Analytics+Dashboard',
-            description: 'An interactive analytics dashboard built with Angular that provides real-time data visualization and insights. The dashboard includes customizable widgets, filters, and export options to help users analyze data effectively.',
-            technologies: ['Angular', 'TypeScript', 'Chart.js', 'RxJS', 'Firebase', 'SCSS'],
-            features: ['Real-time data updates', 'Interactive charts and graphs', 'Customizable dashboard layout', 'Data filtering and sorting', 'Export options (PDF, CSV, Excel)', 'User preference saving'],
-            challenges: ['Implementing real-time data synchronization', 'Creating responsive and interactive visualizations', 'Optimizing performance with large datasets', 'Designing an intuitive user interface'],
-            gallery: [
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Dashboard+Overview',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Charts',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Custom+Widgets',
-                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Reports'
+        'registration-system-apam': {
+            title: 'RegistrationSystemAPAM',
+            subtitle: 'Python Desktop application',
+            icon: 'fa-solid fa-desktop',
+            image: '../public/RegistrationSystemAPAM/APAM-01.png',
+            description: 'APAM is an association whose goal is to protect animals from abandonment and mistreatment. Based in Cuiabá, the NGO shelters around 60 animals that are treated and sent for responsible adoption. This is a non-profit project to meet the needs of the NGO Associação Mato-Grossense Protetora dos Animais (APAM) 🐈🐕.',
+            technologies: ['Python', 'Tkinter', 'GitHub Actions', 'Pandas', 'PyInstaller'],
+            features: [
+                'Add a new volunteer',
+                'Update volunteer',
+                'Delete volunteer',
+                'Search volunteer',
+                'Clean fields',
+                'Export data to Excel',
+                'Available for Windows and Linux'
             ],
-            demoUrl: '#',
-            codeUrl: '#'
+            challenges: [
+                'Developing a user-friendly interface for non-technical staff',
+                'Implementing a reliable database system for volunteer information',
+                'Creating an efficient data export system to Excel',
+                'Ensuring cross-platform compatibility for Windows and Linux'
+            ],
+            gallery: [
+                '../public/RegistrationSystemAPAM/APAM-01.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/RegistrationSystemAPAM/releases',
+            codeUrl: 'https://github.com/Veras-D/RegistrationSystemAPAM'
         },
         'social-bot': {
             title: 'Social Media Automation',
@@ -321,5 +334,44 @@ function animateProjectCards() {
     // Observe each project card
     projectCards.forEach(card => {
         observer.observe(card);
+    });
+}
+
+function setupImageViewer() {
+    const imageViewer = document.createElement('div');
+    imageViewer.className = 'image-viewer-overlay';
+    imageViewer.innerHTML = `
+        <span class="close-viewer">&times;</span>
+        <div class="image-viewer-content">
+            <img class="viewer-image" src="" alt="">
+        </div>
+    `;
+    document.body.appendChild(imageViewer);
+
+    const closeBtn = imageViewer.querySelector('.close-viewer');
+    closeBtn.addEventListener('click', () => {
+        imageViewer.classList.remove('active');
+    });
+
+    imageViewer.addEventListener('click', (e) => {
+        if (e.target === imageViewer) {
+            imageViewer.classList.remove('active');
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.gallery-item img')) {
+            const imgSrc = e.target.src;
+            const viewerImg = imageViewer.querySelector('.viewer-image');
+            
+            viewerImg.src = imgSrc;
+            imageViewer.classList.add('active');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && imageViewer.classList.contains('active')) {
+            imageViewer.classList.remove('active');
+        }
     });
 }
