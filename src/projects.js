@@ -1,5 +1,3 @@
-// Projects Page Functionality
-
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize the projects page
     initProjectsPage();
@@ -66,117 +64,137 @@ function setupProjectModal() {
     const closeBtn = modal.querySelector('.close-modal');
     const detailBtns = document.querySelectorAll('.view-details');
     
-    // Project data - this would normally come from a database or API
-    // const projectData = {
-    //     'ecommerce': {
-    //         title: 'E-commerce Platform',
-    //         subtitle: 'Full-stack web application',
-    //         icon: 'fa-shopping-cart',
-    //         image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=E-commerce+Platform',
-    //         description: 'A comprehensive e-commerce solution built with React and TypeScript for the frontend and a secure REST API using Node.js and MongoDB for the backend. The platform includes user authentication, product management, shopping cart functionality, and secure payment processing.',
-    //         technologies: ['React', 'TypeScript', 'Redux', 'Node.js', 'MongoDB', 'Stripe API', 'AWS S3', 'CSS Modules'],
-    //         features: ['Responsive design for all devices', 'User authentication and profile management', 'Advanced product filtering and search', 'Shopping cart and wishlist', 'Secure payment processing', 'Order tracking', 'Admin dashboard for inventory management'],
-    //         challenges: ['Implementing a scalable state management solution', 'Optimizing image loading for performance', 'Ensuring secure payment processing', 'Creating a responsive design that works on all devices'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Product+Page',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Cart',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Checkout',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Admin'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     },
-    //     'api': {
-    //         title: 'RESTful API Service',
-    //         subtitle: 'Backend infrastructure',
-    //         icon: 'fa-server',
-    //         image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=API+Service',
-    //         description: 'A robust and scalable RESTful API built with Nest.js and TypeScript. This API provides a secure and efficient backend service for various client applications, with features such as authentication, authorization, rate limiting, and comprehensive logging.',
-    //         technologies: ['Nest.js', 'TypeScript', 'MongoDB', 'JWT', 'Docker', 'Swagger', 'Jest'],
-    //         features: ['JWT authentication and role-based authorization', 'Comprehensive API documentation with Swagger', 'Request validation and error handling', 'Rate limiting and security features', 'Containerized with Docker for easy deployment', 'Extensive test coverage with Jest'],
-    //         challenges: ['Designing a clean and maintainable architecture', 'Implementing efficient error handling', 'Ensuring proper security measures', 'Creating comprehensive documentation'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=API+Structure',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Swagger+Docs',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Authentication',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Testing'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     },
-    //     'data-pipeline': {
-    //         title: 'Data Processing Pipeline',
-    //         subtitle: 'Automated data workflow',
-    //         icon: 'fa-database',
-    //         image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Data+Pipeline',
-    //         description: 'An automated data processing pipeline built with Python that collects, cleans, and analyzes data from various sources. The system extracts insights and generates reports automatically, saving hours of manual work.',
-    //         technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Airflow', 'SQL', 'AWS Lambda'],
-    //         features: ['Automated data collection from multiple sources', 'Data cleaning and normalization', 'Statistical analysis and insight generation', 'Automated report generation', 'Scheduled execution with Apache Airflow', 'Error handling and notification system'],
-    //         challenges: ['Handling inconsistent data formats', 'Optimizing performance for large datasets', 'Creating meaningful visualizations', 'Setting up reliable scheduling'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Data+Flow',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Analytics',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Reports',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workflow'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     },
-    //     'dashboard': {
-    //         title: 'Analytics Dashboard',
-    //         subtitle: 'Interactive data visualization',
-    //         icon: 'fa-chart-line',
-    //         image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=Analytics+Dashboard',
-    //         description: 'An interactive analytics dashboard built with Angular that provides real-time data visualization and insights. The dashboard includes customizable widgets, filters, and export options to help users analyze data effectively.',
-    //         technologies: ['Angular', 'TypeScript', 'Chart.js', 'RxJS', 'Firebase', 'SCSS'],
-    //         features: ['Real-time data updates', 'Interactive charts and graphs', 'Customizable dashboard layout', 'Data filtering and sorting', 'Export options (PDF, CSV, Excel)', 'User preference saving'],
-    //         challenges: ['Implementing real-time data synchronization', 'Creating responsive and interactive visualizations', 'Optimizing performance with large datasets', 'Designing an intuitive user interface'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Dashboard+Overview',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Charts',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Custom+Widgets',
-    //             'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Reports'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     },
-    //     'social-bot': {
-    //         title: 'Social Media Automation',
-    //         subtitle: 'Python-based automation tools',
-    //         icon: 'fa-robot',
-    //         image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=Social+Media+Bot',
-    //         description: 'A collection of Python-based automation tools for social media management. These tools help schedule posts, analyze engagement, and generate reports across various social media platforms, streamlining the social media workflow.',
-    //         technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Social Media APIs', 'Pandas', 'Matplotlib'],
-    //         features: ['Post scheduling across multiple platforms', 'Engagement analytics and reporting', 'Content suggestion based on trending topics', 'Automated response to comments and messages', 'Hashtag optimization', 'Competitor analysis'],
-    //         challenges: ['Navigating different social media APIs', 'Handling rate limits and authentication', 'Creating reliable web scraping solutions', 'Developing accurate analytics algorithms'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Scheduling',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Analytics',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Content+Suggestions',
-    //             'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Reporting'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     },
-    //     'mobile-app': {
-    //         title: 'Fitness Tracking App',
-    //         subtitle: 'Cross-platform mobile application',
-    //         icon: 'fa-mobile-alt',
-    //         image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Fitness+App',
-    //         description: 'A cross-platform mobile application built with React Native that helps users track their fitness goals, workouts, and nutrition. The app includes features such as workout planning, progress tracking, and social sharing.',
-    //         technologies: ['React Native', 'Redux', 'Firebase', 'Expo', 'Node.js', 'Express', 'MongoDB'],
-    //         features: ['Personalized workout plans', 'Progress tracking with charts and statistics', 'Nutrition logging and analysis', 'Social sharing and challenges', 'Integration with fitness devices', 'Offline functionality', 'Push notifications and reminders'],
-    //         challenges: ['Creating a consistent experience across platforms', 'Implementing complex animations and transitions', 'Managing state across the application', 'Ensuring offline functionality', 'Optimizing battery usage'],
-    //         gallery: [
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Dashboard',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workout+Tracker',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Nutrition+Log',
-    //             'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Progress+Charts'
-    //         ],
-    //         demoUrl: '#',
-    //         codeUrl: '#'
-    //     }
-    // };
+    // Project data
+    const projectData = {
+        'network-limiter': {
+            title: 'Network Limiter',
+            subtitle: 'Chrome extention application',
+            icon: 'fa-brands fa-chrome',
+            image: '../public/chromeExtention/chrome-02.png',
+            description: 'The <strong>Network Limiter for DevTools</strong> is a browser extension that allows developers to <strong>simulate different network speeds</strong> directly within Chrome\'s Developer Tools. It provides three modes for network speed simulation: <strong>Slow</strong>, <strong>Medium</strong>, and <strong>Fast</strong>. Additionally, you can disable the limitation altogether with the <strong>No Limit</strong> mode.',
+            technologies: ['React', 'TypeScript', 'Node', 'Vite'],
+            features: [
+                'Network Speed Modes: Slow, Medium, Fast, and No Limit',
+                'Simulates slow network conditions',
+                'Simulates a moderate network speed',
+                'Simulates a fast network connection',
+                'No Limit: Disables the speed limit (no simulation)',
+                'Integrates directly with Chrome\'s Developer Tools'
+            ],
+            challenges: ['Integration with Chrome DevTools API', 'Managing network throttling accurately', 'Creating intuitive UI for developers'],
+            gallery: [
+                '../public/chromeExtention/chrome-01.png',
+                '../public/chromeExtention/chrome-02.png',
+                '../public/chromeExtention/chrome-03.png'
+            ],
+            demoUrl: 'https://www.linkedin.com/posts/veras-d_im-happy-to-share-this-network-limiter-chrome-activity-7298063004292546560-9nNX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACPypkcBYqkh2FAoecu5QiJehJsPqnONkwU',
+            codeUrl: 'https://github.com/Veras-D/netwotk-limiter'
+        },
+        'pyholofotes': {
+            title: 'PyHolofotes',
+            subtitle: 'Python Desktop application',
+            icon: 'fa-solid fa-desktop',
+            image: '../public/PyHolofotes/desktop-01.png',
+            description: 'A Python program to control an Arduino RELE system, injecting pulses into surfaces for thermal analysis with a thermal imaging camera. Implemented at the UEMA Heat Transfer Laboratory, providing an efficient platform for thermal data collection.',
+            technologies: ['Python', 'Tkinter', 'Arduino', 'GitHub Actions', 'pyFirmata', 'PyInstaller'],
+            features: [
+                'SetUp Screen: Unique pulse and Periodic Pulse options',
+                'Configures Screen: General Information About Arduino connected',
+                'About Screen: Information About the Software',
+                'Change Theme System',
+                'Available for Windows, Mac and Linux'
+            ],
+            challenges: [
+                'Creating a cross-platform desktop application',
+                'Establishing reliable Arduino-Python communication',
+                'Implementing precise timing for thermal pulse analysis',
+                'Building an intuitive user interface for laboratory settings'
+            ],
+            gallery: [
+                '../public/PyHolofotes/desktop-01.png',
+                '../public/PyHolofotes/desktop-02.png',
+                '../public/PyHolofotes/desktop-03.png',
+                '../public/PyHolofotes/desktop-04.png',
+                '../public/PyHolofotes/desktop-05.png',
+                '../public/PyHolofotes/desktop-06.png',
+                '../public/PyHolofotes/desktop-07.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/PyHolofotes/releases',
+            codeUrl: 'https://github.com/Veras-D/PyHolofotes'
+        },
+        'data-pipeline': {
+            title: 'Data Processing Pipeline',
+            subtitle: 'Automated data workflow',
+            icon: 'fa-database',
+            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Data+Pipeline',
+            description: 'An automated data processing pipeline built with Python that collects, cleans, and analyzes data from various sources. The system extracts insights and generates reports automatically, saving hours of manual work.',
+            technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Airflow', 'SQL', 'AWS Lambda'],
+            features: ['Automated data collection from multiple sources', 'Data cleaning and normalization', 'Statistical analysis and insight generation', 'Automated report generation', 'Scheduled execution with Apache Airflow', 'Error handling and notification system'],
+            challenges: ['Handling inconsistent data formats', 'Optimizing performance for large datasets', 'Creating meaningful visualizations', 'Setting up reliable scheduling'],
+            gallery: [
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Data+Flow',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Analytics',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Reports',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workflow'
+            ],
+            demoUrl: '#',
+            codeUrl: '#'
+        },
+        'dashboard': {
+            title: 'Analytics Dashboard',
+            subtitle: 'Interactive data visualization',
+            icon: 'fa-chart-line',
+            image: 'https://via.placeholder.com/1200x600/8A2BE2/FFFFFF?text=Analytics+Dashboard',
+            description: 'An interactive analytics dashboard built with Angular that provides real-time data visualization and insights. The dashboard includes customizable widgets, filters, and export options to help users analyze data effectively.',
+            technologies: ['Angular', 'TypeScript', 'Chart.js', 'RxJS', 'Firebase', 'SCSS'],
+            features: ['Real-time data updates', 'Interactive charts and graphs', 'Customizable dashboard layout', 'Data filtering and sorting', 'Export options (PDF, CSV, Excel)', 'User preference saving'],
+            challenges: ['Implementing real-time data synchronization', 'Creating responsive and interactive visualizations', 'Optimizing performance with large datasets', 'Designing an intuitive user interface'],
+            gallery: [
+                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Dashboard+Overview',
+                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Charts',
+                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Custom+Widgets',
+                'https://via.placeholder.com/400x300/8A2BE2/FFFFFF?text=Reports'
+            ],
+            demoUrl: '#',
+            codeUrl: '#'
+        },
+        'social-bot': {
+            title: 'Social Media Automation',
+            subtitle: 'Python-based automation tools',
+            icon: 'fa-robot',
+            image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=Social+Media+Bot',
+            description: 'A collection of Python-based automation tools for social media management. These tools help schedule posts, analyze engagement, and generate reports across various social media platforms, streamlining the social media workflow.',
+            technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Social Media APIs', 'Pandas', 'Matplotlib'],
+            features: ['Post scheduling across multiple platforms', 'Engagement analytics and reporting', 'Content suggestion based on trending topics', 'Automated response to comments and messages', 'Hashtag optimization', 'Competitor analysis'],
+            challenges: ['Navigating different social media APIs', 'Handling rate limits and authentication', 'Creating reliable web scraping solutions', 'Developing accurate analytics algorithms'],
+            gallery: [
+                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Scheduling',
+                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Analytics',
+                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Content+Suggestions',
+                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Reporting'
+            ],
+            demoUrl: '#',
+            codeUrl: '#'
+        },
+        'task-manager': {
+            title: 'Task Management App',
+            subtitle: 'Full-stack application',
+            icon: 'fa-tasks',
+            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Task+Manager',
+            description: 'A full-stack application for managing tasks, projects, and team collaboration, built with React and Spring Boot.',
+            technologies: ['React', 'Spring Boot', 'PostgreSQL', 'Redux', 'JWT', 'Bootstrap'],
+            features: ['Task creation and assignment', 'Project management', 'Team collaboration tools', 'Progress tracking', 'Priority and deadline management', 'File attachments', 'Notification system'],
+            challenges: ['Creating an intuitive UI/UX', 'Implementing real-time updates', 'Managing complex state across the application', 'Ensuring data security'],
+            gallery: [
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Dashboard',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Task+View',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Team+Collaboration',
+                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Project+Management'
+            ],
+            demoUrl: '#',
+            codeUrl: '#'
+        }
+    };
     
     // Open modal when view details button is clicked
     detailBtns.forEach(btn => {
@@ -188,18 +206,18 @@ function setupProjectModal() {
                 // Populate modal with project data
                 populateModal(project);
                 
-                // Show modal
-                modal.style.display = 'flex';
+                // Show modal with proper animation
+                modal.style.display = 'block';
                 setTimeout(() => {
-                    modal.classList.add('show');
-                }, 50);
+                    modal.style.opacity = '1';
+                }, 10);
             }
         });
     });
     
     // Close modal when close button is clicked
     closeBtn.addEventListener('click', () => {
-        modal.classList.remove('show');
+        modal.style.opacity = '0';
         setTimeout(() => {
             modal.style.display = 'none';
         }, 300);
@@ -208,7 +226,7 @@ function setupProjectModal() {
     // Close modal when clicking outside content
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.classList.remove('show');
+            modal.style.opacity = '0';
             setTimeout(() => {
                 modal.style.display = 'none';
             }, 300);
@@ -216,51 +234,57 @@ function setupProjectModal() {
     });
     
     function populateModal(project) {
-        // Create modal content
+        // Create modal content that matches the HTML structure expected by CSS
         const content = `
-            <div class="modal-header">
-                <h2>${project.title}</h2>
-                <p class="subtitle">${project.subtitle}</p>
+            <div class="modal-project-header">
+                <div class="modal-project-title">
+                    <h2><i class="fas ${project.icon}"></i> ${project.title}</h2>
+                    <span class="modal-project-subtitle">${project.subtitle}</span>
+                </div>
             </div>
-            <div class="project-image">
-                <img src="${project.image}" alt="${project.title}">
+            
+            <div class="modal-image-div">
+                <img src="${project.image}" alt="${project.title}" class="modal-project-image">
             </div>
-            <div class="project-description">
+            
+            <div class="modal-project-description">
                 <p>${project.description}</p>
             </div>
-            <div class="project-details">
-                <div class="detail-section">
-                    <h3>Technologies Used</h3>
-                    <ul class="tech-list">
+            
+            <div>
+                <div class="modal-info-item">
+                    <h4>Technologies</h4>
+                    <ul>
                         ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
                     </ul>
                 </div>
-                <div class="detail-section">
-                    <h3>Key Features</h3>
+                
+                <div class="modal-info-item">
+                    <h4>Key Features</h4>
                     <ul>
                         ${project.features.map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
                 </div>
-                <div class="detail-section">
-                    <h3>Challenges & Solutions</h3>
+                
+                <div class="modal-info-item">
+                    <h4>Challenges & Solutions</h4>
                     <ul>
                         ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
                     </ul>
                 </div>
             </div>
-            <div class="project-gallery">
-                <h3>Project Gallery</h3>
-                <div class="gallery-container">
-                    ${project.gallery.map(img => `
-                        <div class="gallery-item">
-                            <img src="${img}" alt="Project screenshot">
-                        </div>
-                    `).join('')}
-                </div>
+            
+            <div class="modal-project-gallery">
+                ${project.gallery.map(img => `
+                    <div class="gallery-item">
+                        <img src="${img}" alt="Project screenshot">
+                    </div>
+                `).join('')}
             </div>
-            <div class="project-links">
-                <a href="${project.demoUrl}" class="btn primary-btn" target="_blank">Live Demo</a>
-                <a href="${project.codeUrl}" class="btn secondary-btn" target="_blank">View Code</a>
+            
+            <div class="modal-project-buttons">
+                <a href="${project.demoUrl}" class="modal-project-btn live-demo" target="_blank">Live Demo</a>
+                <a href="${project.codeUrl}" class="modal-project-btn view-code" target="_blank">View Code</a>
             </div>
         `;
         

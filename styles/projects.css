@@ -186,6 +186,8 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(8, 4, 16, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .modal-content {
@@ -229,10 +231,10 @@
     margin-bottom: 25px;
 }
 
-.modal-project-icon {
-    font-size: 2.5rem;
+/* .modal-project-icon i {
+    font-size: 2rem;
     color: var(--primary-color);
-}
+} */
 
 .modal-project-title h2 {
     font-size: 2rem;
@@ -243,11 +245,15 @@
     color: var(--gray-text);
 }
 
+.modal-image-div {
+    display: flex;
+    justify-content: center;
+}
+
 .modal-project-image {
-    width: 100%;
+    height: 100%;
     border-radius: 10px;
     margin-bottom: 25px;
-    height: 400px;
     object-fit: cover;
 }
 
@@ -255,12 +261,12 @@
     margin-bottom: 25px;
 }
 
-.modal-project-info {
+/* .modal-project-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 30px;
-}
+} */
 
 .modal-info-item {
     margin-bottom: 15px;
@@ -295,7 +301,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 36px;
 }
 
 .gallery-item {
@@ -312,8 +318,9 @@
 
 .modal-project-buttons {
     display: flex;
+    justify-content: end;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .modal-project-btn {
@@ -345,6 +352,82 @@
 
 .project-card.hidden {
     display: none;
+}
+
+.expandable-image {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.expandable-image:hover {
+    opacity: 0.9;
+}
+
+.image-viewer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 4, 16, 0.95);
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-viewer-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.image-viewer-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: modalImageFadeIn 0.4s;
+}
+
+@keyframes modalImageFadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+.viewer-image {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+    border-radius: 5px;
+}
+
+.close-viewer {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1002;
+    transition: color 0.3s ease;
+}
+
+.close-viewer:hover {
+    color: var(--primary-color);
+}
+
+.image-caption {
+    color: white;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
 }
 
 @media (max-width: 992px) {
