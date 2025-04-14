@@ -350,26 +350,38 @@ footer {
     font-size: 0.9rem;
 }
 
-.icon-ts {
+.icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('../public/typescript-50.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 8px;
     vertical-align: middle;
 }
 
+.icon-ts {
+    background-image: url('../public/icons/typescript-50.png');
+}
+
 .icon-cs {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('../public/c-sharp-50.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 8px;
-    vertical-align: middle;
+    background-image: url('../public/icons/c-sharp-50.png');
+}
+
+.icon-nest {
+    background-image: url('../public/icons/nest.png');
+}
+
+.icon-jest {
+    background-image: url('../public/icons/jest-24.png');
+}
+
+.icon-postman {
+    background-image: url('../public/icons/postman-24.png');
+}
+
+.icon-cypress {
+    background-image: url('../public/icons/cypress.png');
 }
 
 @media (max-width: 768px) {
