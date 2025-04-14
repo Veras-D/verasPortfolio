@@ -1,5 +1,5 @@
 <div align="center"">
-  <img src="https://i.imgur.com/NSfHb6D.png" style="height: 160px;" />
+  <img src="https://github.com/user-attachments/assets/7a573106-8487-46b8-ac67-927b793a26dc" style="height: 160px;" />
 </div>
 
 # Vivi Veras Portfolio
