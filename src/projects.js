@@ -125,26 +125,8 @@ function setupProjectModal() {
             demoUrl: 'https://github.com/Veras-D/PyHolofotes/releases',
             codeUrl: 'https://github.com/Veras-D/PyHolofotes'
         },
-        'data-pipeline': {
-            title: 'Data Processing Pipeline',
-            subtitle: 'Automated data workflow',
-            icon: 'fa-database',
-            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Data+Pipeline',
-            description: 'An automated data processing pipeline built with Python that collects, cleans, and analyzes data from various sources. The system extracts insights and generates reports automatically, saving hours of manual work.',
-            technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Airflow', 'SQL', 'AWS Lambda'],
-            features: ['Automated data collection from multiple sources', 'Data cleaning and normalization', 'Statistical analysis and insight generation', 'Automated report generation', 'Scheduled execution with Apache Airflow', 'Error handling and notification system'],
-            challenges: ['Handling inconsistent data formats', 'Optimizing performance for large datasets', 'Creating meaningful visualizations', 'Setting up reliable scheduling'],
-            gallery: [
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Data+Flow',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Analytics',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Reports',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Workflow'
-            ],
-            demoUrl: '#',
-            codeUrl: '#'
-        },
         'registration-system-apam': {
-            title: 'RegistrationSystemAPAM',
+            title: 'Registration System APAM',
             subtitle: 'Python Desktop application',
             icon: 'fa-solid fa-desktop',
             image: '../public/RegistrationSystemAPAM/APAM-01.png',
@@ -171,41 +153,65 @@ function setupProjectModal() {
             demoUrl: 'https://github.com/Veras-D/RegistrationSystemAPAM/releases',
             codeUrl: 'https://github.com/Veras-D/RegistrationSystemAPAM'
         },
-        'social-bot': {
-            title: 'Social Media Automation',
-            subtitle: 'Python-based automation tools',
-            icon: 'fa-robot',
-            image: 'https://via.placeholder.com/1200x600/6A1B9A/FFFFFF?text=Social+Media+Bot',
-            description: 'A collection of Python-based automation tools for social media management. These tools help schedule posts, analyze engagement, and generate reports across various social media platforms, streamlining the social media workflow.',
-            technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Social Media APIs', 'Pandas', 'Matplotlib'],
-            features: ['Post scheduling across multiple platforms', 'Engagement analytics and reporting', 'Content suggestion based on trending topics', 'Automated response to comments and messages', 'Hashtag optimization', 'Competitor analysis'],
-            challenges: ['Navigating different social media APIs', 'Handling rate limits and authentication', 'Creating reliable web scraping solutions', 'Developing accurate analytics algorithms'],
-            gallery: [
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Scheduling',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Analytics',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Content+Suggestions',
-                'https://via.placeholder.com/400x300/6A1B9A/FFFFFF?text=Reporting'
+        'data-analysis-dashboard': {
+            title: 'Data Analysis Dashboard',
+            subtitle: 'DashBoard Looker Studio',
+            icon: 'fa-solid fa-table-columns',
+            image: '../public/trilhasDashboard/dashboard-1.png',
+            description: 'This project is a comprehensive, interactive dashboard built using Google Looker Studio, developed as part of a data visualization challenge. It replicates and enhances an existing dashboard by integrating key features like calculated fields, dynamic filters (e.g. by municipality and date range), and rich visual components such as pie charts, bar graphs, and geolocation maps.<br><br>The dashboard connects directly to a structured dataset of 309 registrants, offering detailed insights into participant demographics, income levels, educational background, and motivations for joining training programs. By leveraging data storytelling and visual clarity, the project supports decision-making while showcasing data literacy and design proficiency.',
+            technologies: ['Looker Studio', 'Google Sheets', 'SQL', 'LookML'],
+            features: [
+                '📍 Municipality-level filtering',
+                '🧠 Socioeconomic analysis',
+                '🧮 Calculated metrics (e.g. average age, participation rate)',
+                '📊 Charts on education, race, gender, income, and more',
+                '📅 Evolution of registration over time',
+                '🌐 Map visualizations of geographical coverage'
             ],
-            demoUrl: '#',
-            codeUrl: '#'
+            challenges: [
+                'Creating intuitive data visualizations from complex datasets',
+                'Implementing dynamic filtering without compromising performance',
+                'Designing clear visual hierarchy to highlight key insights',
+                'Balancing informational depth with dashboard usability'
+            ],
+            gallery: [
+                '../public/trilhasDashboard/dashboard-1.png',
+                '../public/trilhasDashboard/dashboard-2.png',
+                '../public/trilhasDashboard/dashboard-3.png',
+                '../public/trilhasDashboard/dashboard-4.png'
+            ],
+            demoUrl: 'https://lookerstudio.google.com/s/lpkuvVvNvIc',
+            codeUrl: 'https://docs.google.com/spreadsheets/d/13_p8nO5A3boUxYGNhPNmqH5thv6kuZIvaI6oLwPRCKk/edit?usp=sharing'
         },
-        'task-manager': {
-            title: 'Task Management App',
-            subtitle: 'Full-stack application',
-            icon: 'fa-tasks',
-            image: 'https://via.placeholder.com/1200x600/9D4EDD/FFFFFF?text=Task+Manager',
-            description: 'A full-stack application for managing tasks, projects, and team collaboration, built with React and Spring Boot.',
-            technologies: ['React', 'Spring Boot', 'PostgreSQL', 'Redux', 'JWT', 'Bootstrap'],
-            features: ['Task creation and assignment', 'Project management', 'Team collaboration tools', 'Progress tracking', 'Priority and deadline management', 'File attachments', 'Notification system'],
-            challenges: ['Creating an intuitive UI/UX', 'Implementing real-time updates', 'Managing complex state across the application', 'Ensuring data security'],
-            gallery: [
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Dashboard',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Task+View',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Team+Collaboration',
-                'https://via.placeholder.com/400x300/9D4EDD/FFFFFF?text=Project+Management'
+        'crypto-finance-dashboard': {
+            title: 'Crypto Finance Dashboard',
+            subtitle: 'Python Real-time Crypto DashBoard',
+            icon: 'fa-solid fa-table-columns',
+            image: '../public/cryptoDashboard/dashboard-0.png',
+            description: '<strong>Crypto Dashboard</strong> is a dynamic, interactive web application built with Streamlit and Plotly that offers in-depth analytics on over 20 cryptocurrencies. It features daily and cumulative return analysis, volatility breakdowns, and profitability metrics by day, week, and month. The dashboard also integrates macroeconomic indicators such as U.S. interest rates, unemployment, and the Fear & Greed Index to provide users with a broader market context.<br><br>The platform includes performance comparisons between crypto assets and traditional indices like the S&P 500 and IBOVESPA, as well as a Monte Carlo simulation module that projects potential future price paths using historical BTC data. Whether you\'re a trader, data analyst, or financial enthusiast, this tool is designed to turn complex data into clear, actionable insights—all in a browser, no installation required.',
+            technologies: ['Python', 'Pandas', 'Numpy', 'Streamlit', 'Plotly', 'Selenium', 'Binance API'],
+            features: [
+                '🏠 <strong>Home:</strong> Welcome screen with project logo and navigation',
+                '🔍 <strong>Crypto Analytics:</strong> Analyze crypto returns, aggregated performance by day/month/week',
+                '🏛️ <strong>Macroeconomic View:</strong> Explore U.S. macro indicators (interest rates, unemployment, consumer confidence)',
+                '📊 <strong>Comparative Returns:</strong> Compare selected crypto assets with BTC, S&P 500 and IBOVESPA',
+                '🚀 <strong>Monte Carlo Simulation:</strong> Simulate price behavior over 100 days using Monte Carlo analysis'
             ],
-            demoUrl: '#',
-            codeUrl: '#'
+            challenges: [
+                'Integrating real-time data from multiple financial APIs',
+                'Building a Monte Carlo simulation model with statistical accuracy',
+                'Optimizing performance for large datasets and complex visualizations',
+                'Creating an intuitive interface for both technical and non-technical users'
+            ],
+            gallery: [
+                '../public/cryptoDashboard/dashboard-1.png',
+                '../public/cryptoDashboard/dashboard-2.png',
+                '../public/cryptoDashboard/dashboard-3.png',
+                '../public/cryptoDashboard/dashboard-4.png',
+                '../public/cryptoDashboard/dashboard-5.png'
+            ],
+            demoUrl: 'https://dashboardcripto.streamlit.app/',
+            codeUrl: 'https://github.com/Veras-D/team-25_Desafio-IV'
         }
     };
     
