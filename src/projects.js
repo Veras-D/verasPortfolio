@@ -212,6 +212,53 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://dashboardcripto.streamlit.app/',
             codeUrl: 'https://github.com/Veras-D/team-25_Desafio-IV'
+        },
+        'traderbot': {
+            title: 'TraderBot',
+            subtitle: 'Automated SMA Crossover Crypto Bot',
+            icon: 'icon icon-bot',
+            image: '../public/traderBot/traderbot-1.png',
+            description: 'TraderBot is a lightweight crypto trading bot built in TypeScript that implements a Simple Moving Average (SMA) crossover strategy. Designed to run on the Binance Testnet, the bot periodically fetches candlestick data, calculates SMA-13 and SMA-21 values, and determines ideal buy/sell signals based on the crossovers. This makes it an excellent starting point for anyone learning about automated trading strategies, Node.js applications, or financial data automation. It logs trade operations and calculates the profit percentage per cycle, helping users evaluate the effectiveness of the strategy over time.',
+            technologies: ['TypeScript', 'Node.js', 'Axios', 'Binance Testnet API'],
+            features: [
+                '📈 <strong>SMA Strategy:</strong> Buy/sell based on SMA-13 and SMA-21 crossover logic',
+                '🔁 <strong>Auto Execution:</strong> Runs every 60 seconds and evaluates market conditions',
+                '💸 <strong>Profit Tracking:</strong> Calculates and logs the profit of every trade cycle',
+                '🌐 <strong>Binance Testnet:</strong> Safe environment for testing crypto strategies without real money',
+                '🐳 <strong>Dockerized:</strong> Easily deployable in any environment with Docker support'
+            ],
+            challenges: [
+                'Handling floating-point precision and making the bot stateless for Docker compatibility.'
+            ],
+            gallery: [
+                '../public/traderBot/traderbot-1.png'
+            ],
+            demoUrl: 'https://github.com/veras-d/traderbot',
+            codeUrl: 'https://github.com/veras-d/traderbot'
+        },
+        'discord-bot': {
+            title: 'Discord Bot',
+            subtitle: 'Python Discord Bot',
+            icon: 'icon icon-bot',
+            image: '../public/discordBot/bot-1.png',
+            description: 'This project is a modular Discord bot built with Python and discord.py, designed to enhance community interaction through fun and utility-driven features. It offers a friendly onboarding experience with automatic welcome messages, interactive dice-rolling using buttons, and a curated selection of GIFs from the Giphy API. Whether you\'re building a cozy hangout server or a full-blown gaming community, WastedServices makes moderation and engagement feel seamless and playful.<br><br>The project is structured with scalability and clarity in mind, making it easy to extend with new commands and events. Its architecture follows a clean, modular pattern with folders for commands, events, and utilities, and uses environment variables for secure configuration. With async API calls, custom command trees, and slash command support, this bot is both fun and a great example of professional Python Discord development.',
+            technologies: ['Python', 'discord.py', 'Giphy API', 'aiohttp', 'dotenv', 'Slash Commands', 'Async Programming'],
+            features: [
+                '👋 <strong>Welcome messages:</strong> Automatically welcomes new users with embedded messages and mentions the rules.',
+                '🎞️ <strong>GIF Commands:</strong> Fetches and sends random GIFs using Giphy API (e.g., cat/fail).',
+                '🎲 <strong>Dice Rolling:</strong> Interactive buttons to roll D6, D8, D10, and D20 dice with custom embed results.',
+                '🔊 <strong>Temporary Channels:</strong> Allows server owner to create temporary voice and text channels that auto-delete after inactivity.',
+                '🧩 <strong>Modular Architecture:</strong> Separated into commands, events, and utils for easier scaling and maintenance.',
+                '🔐 <strong>Environment Configuration:</strong> Uses dotenv to securely manage API keys and tokens.'
+            ],
+            challenges: [
+                'Designing a clean and scalable architecture for future feature expansion was key. Handling async API requests and integrating Discord slash commands required careful error handling and event management.'
+            ],
+            gallery: [
+                '../public/discordBot/bot-1.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/discordBot',
+            codeUrl: 'https://github.com/Veras-D/discordBot'
         }
     };
     

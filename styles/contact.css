@@ -260,7 +260,7 @@
 
 .form-success i {
     font-size: 3rem;
-    color: #2ecc71;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
