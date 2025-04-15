@@ -239,7 +239,7 @@ function setupProjectModal() {
         'discord-bot': {
             title: 'Discord Bot',
             subtitle: 'Python Discord Bot',
-            icon: 'icon icon-bot',
+            icon: 'icon-bot',
             image: '../public/discordBot/bot-1.png',
             description: 'This project is a modular Discord bot built with Python and discord.py, designed to enhance community interaction through fun and utility-driven features. It offers a friendly onboarding experience with automatic welcome messages, interactive dice-rolling using buttons, and a curated selection of GIFs from the Giphy API. Whether you\'re building a cozy hangout server or a full-blown gaming community, WastedServices makes moderation and engagement feel seamless and playful.<br><br>The project is structured with scalability and clarity in mind, making it easy to extend with new commands and events. Its architecture follows a clean, modular pattern with folders for commands, events, and utilities, and uses environment variables for secure configuration. With async API calls, custom command trees, and slash command support, this bot is both fun and a great example of professional Python Discord development.',
             technologies: ['Python', 'discord.py', 'Giphy API', 'aiohttp', 'dotenv', 'Slash Commands', 'Async Programming'],
@@ -259,6 +259,85 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://github.com/Veras-D/discordBot',
             codeUrl: 'https://github.com/Veras-D/discordBot'
+        },
+        'telegram-bot': {
+            title: 'Telegram Bot',
+            subtitle: 'Python Telegram Bot',
+            icon: 'icon-bot',
+            image: '../public/telegramBot/bot-1.png',
+            description: 'This project is a lightweight and modular Telegram bot built with Python and the python-telegram-bot library.<br><br>It connects to the Binance public API to fetch the real-time BTC/USDT price and sends periodic updates (every 60 seconds) to a chosen Telegram chat. With automatic variation tracking, intuitive emoji feedback, and clean modular code, this bot offers a hands-free way to monitor Bitcoin fluctuations. Ideal for developers, day traders, or anyone wanting to stay updated on the go.<br><br>The project uses environment variables for security and is structured to be easily customizable or extensible for other crypto pairs or alert systems.',
+            technologies: ['Python', 'Telegram Bot API', 'Binance API', 'Requests'],
+            features: [
+                '📈 <strong>Real-time BTC Price:</strong> Fetches current BTC/USDT price using Binance API.',
+                '🔄 <strong>Variation Tracking:</strong> Calculates and shows price variation with visual feedback (🔴🟢).',
+                '⏱️ <strong>Periodic Updates:</strong> Sends automatic price updates every 60 seconds.',
+                '🔐 <strong>Secure Tokens:</strong> Uses .env to manage secrets and configuration.',
+                '💬 <strong>Telegram Integration:</strong> Sends messages directly to your personal or group Telegram chat.'
+            ],
+            challenges: [
+                'Managing async vs sync requests with the Telegram job queue and maintaining clean message formatting across updates were key challenges. Also, dealing with rate limits and ensuring robustness for long runtimes required retries and good logging.'
+            ],
+            gallery: [
+                '../public/telegramBot/bot-1.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/telegramBot',
+            codeUrl: 'https://github.com/Veras-D/telegramBot'
+        },
+        'churn-prediction': {
+            title: 'Churn Prediction',
+            subtitle: 'Data Analysis and Data Science Project With AI Dashboard Prediction',
+            icon: 'fa-solid fa-flask',
+            image: '../public/churnPrediction/data-1.png',
+            description: 'This project aims to predict whether a bank customer is likely to leave (churn) based on demographic and financial information. The dataset includes attributes like age, gender, credit card status, account balance, and activity level. After thorough data preprocessing—including handling missing values, outliers, encoding, and feature transformation—a classification model was trained and evaluated.<br><br>The Random Forest Classifier delivered strong performance, achieving close to 80% accuracy. An interactive dashboard was built using Streamlit, allowing stakeholders to test different customer scenarios and receive immediate churn predictions. The project provides actionable insights into customer behavior, offering a valuable tool for retention strategies and business decision-making.',
+            technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Random Forest', 'SVM', 'Logistic Regression', 'Confusion Matrix', 'Streamlit', 'Joblib', 'Ngrok'],
+            features: [
+                '📉 <strong>Model Limitations:</strong> Poor performance in regression models for score prediction',
+                '🧼 <strong>Data Challenges:</strong> Dirty data: unspecified gender and missing or outlier salaries',
+                '🧮 <strong>Feature Engineering:</strong> Limited feature engineering due to lack of additional relevant variables',
+                '🧪 <strong>Class Imbalance:</strong> ~20% churn rate impacting model performance',
+                '🌐 <strong>Deployment:</strong> Local deployment with Ngrok instead of a permanent cloud setup'
+            ],
+            challenges: [
+                'Cleaning and preprocessing data with missing values and outliers, dealing with class imbalance, and creating a user-friendly predictive interface were major challenges. Additionally, deploying locally using Ngrok instead of a scalable cloud platform presented limitations for accessibility.'
+            ],
+            gallery: [
+                '../public/churnPrediction/data-1.png',
+                '../public/churnPrediction/data-2.png'
+            ],
+            demoUrl: 'https://churnpredictionappbank.streamlit.app/',
+            codeUrl: 'https://colab.research.google.com/drive/1QIX2NrKx0qR0EjkkATt9CCdNGZn6znjF?usp=sharing'
+        },
+        'alo-comunidade': {
+            title: 'Alô Comunidade',
+            subtitle: 'Saving lives with technology and information',
+            icon: 'fa-solid fa-globe',
+            image: '../public/aloComunidade/page-1.png',
+            description: 'Alô Comunidade is a web application developed during the Recode Hackathon to support people affected by floods in Rio Grande do Sul, Brazil. The platform serves as a centralized hub for information about available shelters, access conditions, and geolocation. Designed for crisis scenarios, the site is responsive and easy to use—even with limited internet access.',
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap 5', 'Leaflet.js', 'Google Fonts'],
+            features: [
+                '🏠 <strong>Shelter Locator:</strong> Find nearby shelters with distance indicators and map links',
+                '📱 <strong>Responsive Design:</strong> Fully responsive design for both mobile and desktop',
+                '🔄 <strong>Data Updates:</strong> Manual data update simulation to mimic real-time updates',
+                '🗺️ <strong>Interactive Map:</strong> Interactive map integration using Leaflet library',
+                '✉️ <strong>Contact System:</strong> Functional contact page for help and feedback',
+                '👥 <strong>Accessible UI:</strong> User-friendly interface with clean and accessible visuals'
+            ],
+            challenges: [
+                'Linking simulated shelter data with clear visual display',
+                'Creating smooth navigation under information-heavy scenarios',
+                'Designing an accessible and empathetic UI under tight deadlines',
+                'Optimizing usability for low-bandwidth environments'
+            ],
+            gallery: [
+                '../public/aloComunidade/page-1.png',
+                '../public/aloComunidade/page-2.png',
+                '../public/aloComunidade/page-3.png',
+                '../public/aloComunidade/page-4.png', 
+                '../public/aloComunidade/page-5.png',
+                '../public/aloComunidade/page-6.png'
+            ],
+            demoUrl: 'https://hackaton-recode.vercel.app/',
+            codeUrl: 'https://github.com/Veras-D/hackaton_recode'
         }
     };
     

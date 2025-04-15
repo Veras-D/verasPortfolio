@@ -385,6 +385,13 @@ footer {
 }
 
 .icon-bot {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
     background-image: url('../public/icons/bot-30.png');
 }
 
