@@ -369,6 +369,31 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://veras-d.github.io/travelAgencyProject/index.html/',
             codeUrl: 'https://github.com/Veras-D/travelAgencyProject'
+        },
+        'book-manager-api': {
+            title: 'Book Manager API',
+            subtitle: 'Simple & Scalable Book Management API',
+            icon: 'fa-brands fa-node-js',
+            image: '../public/bookApi/api-1.png',
+            description: 'This RESTful API allows users to create, read, update, and delete books. Designed with modular architecture using MVC pattern, the API is easy to scale and extend. Postman was used for testing all endpoints and ensuring reliability.',
+            technologies: ['JavaScript', 'Node.js', 'Express.js', 'Postman', 'MVC Architecture'],
+            features: [
+                '📚 <strong>CRUD Operations:</strong> Create, read, update and delete books',
+                '🧩 <strong>MVC Pattern:</strong> Modular MVC codebase',
+                '🚀 <strong>Extensibility:</strong> Easy to extend for new features',
+                '🧪 <strong>Quality Assurance:</strong> Fully tested with Postman'
+            ],
+            challenges: [
+                'Structuring the application using the MVC pattern from scratch',
+                'Ensuring all CRUD operations worked correctly with minimal code',
+                'Maintaining clean, scalable, and readable code'
+            ],
+            gallery: [
+                '../public/bookApi/api-1.png',
+                '../public/bookApi/api-2.png'
+            ],
+            demoUrl: 'https://apibookmanager.onrender.com/api/books/',
+            codeUrl: 'https://github.com/Veras-D/apiBookManager'
         }
     };
     
