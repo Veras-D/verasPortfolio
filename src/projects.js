@@ -338,6 +338,37 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://hackaton-recode.vercel.app/',
             codeUrl: 'https://github.com/Veras-D/hackaton_recode'
+        },
+        'travel-agency': {
+            title: 'Travel Agency',
+            subtitle: 'Homepage for Dream Travel Agency',
+            icon: 'fa-solid fa-globe',
+            image: '../public/travelAgency/page-1.png',
+            description: 'This project is a static frontend for a fictional travel agency called Dream Travel. It was developed as the first individual assignment for the Fullstack Developer course by Recode Pro AI. The focus was on building a responsive and visually appealing homepage using HTML, CSS, and Bootstrap, alongside designing the conceptual, logical, and physical database models.',
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap 5'],
+            features: [
+                '📱 <strong>Responsive Design:</strong> Responsive layout using Bootstrap 5',
+                '🏝️ <strong>Featured Content:</strong> Homepage with hero section, destinations, and travel packages',
+                '🧭 <strong>Navigation:</strong> Navigation bar and internal routing to other static pages (About Us, Contact, Destinations)',
+                '🎨 <strong>Custom Styling:</strong> Custom styling using CSS',
+                '💾 <strong>Database Planning:</strong> Database modeling included: conceptual, logical, and physical diagrams'
+            ],
+            challenges: [
+                'Planning a clean layout using Bootstrap grid system',
+                'Creating intuitive and attractive content structure with static HTML',
+                'Designing a coherent database schema from scratch',
+                'Balancing design and functionality within the scope of a static project'
+            ],
+            gallery: [
+                '../public/travelAgency/page-1.png',
+                '../public/travelAgency/page-2.png',
+                '../public/travelAgency/page-3.png',
+                '../public/travelAgency/page-4.png',
+                '../public/travelAgency/page-5.png',
+                '../public/travelAgency/page-6.png'
+            ],
+            demoUrl: 'https://veras-d.github.io/travelAgencyProject/index.html/',
+            codeUrl: 'https://github.com/Veras-D/travelAgencyProject'
         }
     };
     
