@@ -7,7 +7,7 @@
 A personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer.
 
 <div align="center">
-    <img src="https://i.imgur.com/ObosWhQ.png" alt="Website Preview">
+    <img src="https://github.com/user-attachments/assets/81cfcdc9-ba8a-4709-b78e-0aa62003a484" alt="Website Preview">
 </div>
 
 ## 📋 Overview
