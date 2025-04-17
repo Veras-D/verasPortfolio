@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f8bd615-3fca-40be-94c1-8c84f826140e/deploy-status)](https://app.netlify.com/sites/veras-app/deploys)
+
 <div align="center"">
   <img src="https://github.com/user-attachments/assets/19ace3d6-029f-469f-a429-adb6a060c15c" style="height: 240px;" />
 </div>
