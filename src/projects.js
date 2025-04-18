@@ -394,6 +394,41 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://apibookmanager.onrender.com/api/books/',
             codeUrl: 'https://github.com/Veras-D/apiBookManager'
+        },
+        'rainbow-talent-design': {
+            title: 'Rainbow Talent Design',
+            subtitle: 'A FIGMA design and Branding Book',
+            icon: 'fa-brands fa-figma',
+            image: '../public/rainbowTalents/design-1.png',
+            description: 'Rainbow Talents is a platform built to celebrate and support LGBTQIA+ professionals. This design project focused on creating a unique, inclusive, and accessible brand identity using color psychology and UI/UX best practices. The Brand Book ensures visual consistency, while the high-fidelity prototype showcases user flows and thoughtful accessibility choices.',
+            technologies: ['Figma', 'Color Psychology', 'Typography for Accessibility', 'UI Design Systems', 'Component-Based Design'],
+            features: [
+                '📘 <strong>Complete Brand Book</strong> with logo, typography, and color palette',
+                '🖥️ <strong>High-Fidelity UI Screens</strong> for web',
+                '📱 <strong>Responsive design</strong> with accessibility considerations',
+                '🤝 <strong>Inclusive visual language</strong> welcoming to all users',
+                '🧩 <strong>Design tokens</strong> and reusable components'
+            ],
+            challenges: [
+                'Balancing a bold, expressive aesthetic with readability and accessibility',
+                'Creating a design system that supports emotional connection and trust',
+                'Communicating inclusivity without stereotypes',
+                'Working collaboratively in a fast-paced design sprint'
+            ],
+            gallery: [
+                '../public/rainbowTalents/design-1.png',
+                '../public/rainbowTalents/design-2.png',
+                '../public/rainbowTalents/design-3.png',
+                '../public/rainbowTalents/design-4.png',
+                '../public/rainbowTalents/design-5.png',
+                '../public/rainbowTalents/design-6.png',
+                '../public/rainbowTalents/design-7.png',
+                '../public/rainbowTalents/design-8.png',
+                '../public/rainbowTalents/design-9.png',
+                '../public/rainbowTalents/design-10.png'
+            ],
+            demoUrl: 'https://www.figma.com/proto/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&starting-point-node-id=454%3A146&t=etW0v3Yuh7Y89Dtq-1',
+            codeUrl: 'https://www.figma.com/design/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&t=0qrY4GIKUyLzMSQR-1'
         }
     };
     
