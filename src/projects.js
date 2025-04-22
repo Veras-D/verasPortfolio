@@ -425,7 +425,8 @@ function setupProjectModal() {
                 '../public/rainbowTalents/design-7.png',
                 '../public/rainbowTalents/design-8.png',
                 '../public/rainbowTalents/design-9.png',
-                '../public/rainbowTalents/design-10.png'
+                '../public/rainbowTalents/design-10.png',
+                '../public/rainbowTalents/design-11.png'
             ],
             demoUrl: 'https://www.figma.com/proto/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&starting-point-node-id=454%3A146&t=etW0v3Yuh7Y89Dtq-1',
             codeUrl: 'https://www.figma.com/design/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&t=0qrY4GIKUyLzMSQR-1'
