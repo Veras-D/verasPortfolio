@@ -406,6 +406,18 @@ footer {
     background-image: url('../public/icons/money-bill-exchange.png');
 }
 
+.fa-terraform {
+    background-image: url('../public/icons/terraform-50.png');
+}
+
+.fa-kubernetes {
+    background-image: url('../public/icons/kubernetes-50.png');
+}
+
+.fa-tailwind {
+    background-image: url('../public/icons/tailwindcss-48.png');
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
