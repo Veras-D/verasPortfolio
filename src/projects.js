@@ -457,6 +457,37 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://github.com/Veras-D/currency-checker/releases',
             codeUrl: 'https://github.com/Veras-D/currency-checker'
+        },
+        'discord-timestamp-generator': {
+            title: 'Discord Timestamp Generator',
+            subtitle: 'Browser Extension for Discord Timestamps',
+            icon: 'fab fa-discord',
+            image: '../public/discordTimestamp/0.png',
+            description: 'Discord Timestamp Generator is a cross-browser extension that generates Discord timestamp codes with live preview functionality. Features an intuitive interface for creating timestamps in all Discord-supported formats with real-time preview, theme switching, and one-click copy functionality.',
+            technologies: ['Chrome Extensions API', 'WebExtensions API', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Clipboard API', 'LocalStorage'],
+            features: [
+                '⏰ Generate Discord timestamp codes for any date and time',
+                '🔄 Support for all 7 Discord timestamp formats (t, T, d, D, f, F, R)',
+                '👁️ Live preview of how timestamps will appear in Discord',
+                '🌙 Dark/light theme toggle with persistent storage',
+                '📋 One-click copy to clipboard with visual feedback',
+                '⚡ Current time quick-fill button for convenience',
+                '📱 Responsive design optimized for various screen sizes',
+                '🌐 Cross-browser compatibility (Chrome, Firefox, Edge, Safari, Opera)'
+            ],
+            challenges: [
+                'Implementing cross-browser WebExtensions API compatibility',
+                'Creating accurate relative time calculations with proper internationalization',
+                'Designing a Discord-inspired UI that works across different browser popup constraints',
+                'Handling clipboard operations with modern API and legacy fallbacks',
+                'Managing theme persistence across browser sessions'
+            ],
+            gallery: [
+                '../public/discordTimestamp/1.png',
+                '../public/discordTimestamp/2.png',
+            ],
+            demoUrl: 'https://github.com/Veras-D/discord-timestamp-generator/releases',
+            codeUrl: 'https://github.com/Veras-D/discord-timestamp-generator'
         }
     };
     
