@@ -430,6 +430,33 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://www.figma.com/proto/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&starting-point-node-id=454%3A146&t=etW0v3Yuh7Y89Dtq-1',
             codeUrl: 'https://www.figma.com/design/wWbuG20cXnxqmbyJZPhEJf/squad-10?node-id=454-146&t=0qrY4GIKUyLzMSQR-1'
+        },
+        'currency-checker': {
+            title: 'Currency Checker',
+            subtitle: 'Chrome Extension for Real-Time Exchange Rates',
+            icon: 'fa-solid fa-money-bill-exchange',
+            image: '../public/currency-checker/1.png',
+            description: 'Currency Checker is a lightweight Chrome extension that provides real-time exchange rates from USD and EUR to BRL (Brazilian Real). Built with vanilla JavaScript, it features a clean interface, auto-refresh functionality, and intelligent caching to minimize API calls while keeping users informed of the latest currency rates.',
+            technologies: ['Chrome Extensions API', 'JavaScript', 'HTML5', 'CSS3', 'Exchange Rate API', 'Local Storage'],
+            features: [
+                '📊 Real-time USD → BRL and EUR → BRL exchange rates',
+                '🔄 Auto-refresh functionality with manual refresh option',
+                '⏱️ Smart 30-minute caching system to optimize API usage',
+                '📱 Clean, responsive popup interface',
+                '🕒 Last updated timestamp with relative time display',
+                '🔒 Privacy-focused with no personal data collection'
+            ],
+            challenges: [
+                'Implementing efficient caching mechanism to balance real-time data with API rate limits',
+                'Creating a responsive popup interface within Chrome extension constraints',
+                'Handling API errors and network connectivity issues gracefully',
+                'Optimizing performance for minimal resource usage'
+            ],
+            gallery: [
+                '../public/currency-checker/1.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/currency-checker/releases',
+            codeUrl: 'https://github.com/Veras-D/currency-checker'
         }
     };
     
