@@ -520,6 +520,57 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://github.com/veras-d/DevOpsProject/releases',
             codeUrl: 'https://github.com/veras-d/DevOpsProject'
+        },
+        'authlab-api': {
+            title: 'AuthLab API',
+            subtitle: 'Robust Authentication Service with Node.js & TypeScript',
+            icon: 'fas fa-shield-alt',
+            image: '../public/authlab/1.png',
+            description: 'A comprehensive authentication API built with Node.js and TypeScript, featuring JWT-based authentication, refresh tokens, and comprehensive security measures. Includes complete testing suite, Docker containerization, and production-ready deployment configuration.',
+            technologies: [
+                'Node.js 20+',
+                'TypeScript 5.8.3',
+                'Express 5.1.0',
+                'MongoDB',
+                'Mongoose',
+                'JWT',
+                'bcrypt',
+                'Jest',
+                'Docker',
+                'Swagger',
+                'Joi Validation'
+            ],
+            features: [
+                '🔒 JWT-based authentication with automatic refresh token rotation',
+                '👤 Secure user registration and login with password hashing',
+                '🛡️ Comprehensive security with rate limiting and CORS protection',
+                '📊 Input validation and sanitization with Joi schemas',
+                '📚 Interactive Swagger API documentation at /api-docs',
+                '🧪 Extensive testing coverage (unit & integration tests)',
+                '🐳 Full Docker containerization with multi-stage builds',
+                '🚀 Production-ready deployment with CI/CD pipeline',
+                '☁️ AWS ECS deployment ready with SST configuration',
+                '🔄 Automated token refresh and session management'
+            ],
+            challenges: [
+                'Implementing secure JWT token rotation and refresh mechanism',
+                'Designing comprehensive middleware pipeline for authentication and validation',
+                'Creating extensive test coverage for both unit and integration scenarios',
+                'Setting up multi-environment Docker configuration for development and production',
+                'Implementing proper error handling and security best practices',
+                'Configuring automated CI/CD pipeline with proper environment management'
+            ],
+            gallery: [
+                '../public/authlab/2.png',
+                '../public/authlab/3.png',
+                '../public/authlab/4.png',
+                '../public/authlab/5.png',
+                '../public/authlab/6.png',
+                '../public/authlab/7.png',
+                '../public/authlab/8.png'
+            ],
+            demoUrl: 'https://auth-lab-api.onrender.com/api-docs',
+            codeUrl: 'https://github.com/Veras-D/auth-lab'
         }
     };
     
