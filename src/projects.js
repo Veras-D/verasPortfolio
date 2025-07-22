@@ -571,6 +571,70 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://auth-lab-api.onrender.com/api-docs',
             codeUrl: 'https://github.com/Veras-D/auth-lab'
+        },
+        'lgbt-mythorfact': {
+            title: 'LGBTMythOrFact 🏳️‍🌈',
+            subtitle: 'Interactive Educational Quiz Game - Full Stack Application',
+            icon: 'fas fa-rainbow',
+            image: '../public/lgbtmythorfact/1.png',
+            description: 'A comprehensive full-stack quiz application designed to educate and challenge players about LGBTQ+ topics. Features secure JWT authentication, multiple difficulty levels, real-time scoring, global leaderboards, and an administrative panel for content management. Built with modern technologies and deployed on cloud platforms.',
+            technologies: [
+                'Java 17',
+                'Spring Boot 3.x',
+                'React 18',
+                'TypeScript',
+                'Tailwind CSS',
+                'MySQL',
+                'PostgreSQL',
+                'JWT Authentication',
+                'Swagger UI',
+                'Vite',
+                'Docker',
+                'Flyway Migrations'
+            ],
+            features: [
+                '🎮 Interactive quiz game with true/false questions about LGBTQ+ topics',
+                '🏆 Multiple difficulty levels (Easy, Hard, Expert) with adaptive scoring',
+                '🔒 Secure JWT-based authentication system with email confirmation',
+                '📊 Global leaderboard and personal progress tracking',
+                '📱 Fully responsive design optimized for all devices',
+                '⚡ Real-time scoring system with streak tracking',
+                '👤 Complete user profile management with game history',
+                '🛠️ Admin panel for statement management and user administration',
+                '📧 Email verification and password reset functionality',
+                '🌈 Pride-themed design system with glassmorphism effects',
+                '📚 Comprehensive API documentation with Swagger UI',
+                '🐳 Docker containerization with development and production environments'
+            ],
+            challenges: [
+                'Implementing multi-database support (MySQL for dev, PostgreSQL for prod)',
+                'Creating a comprehensive JWT authentication flow with email verification',
+                'Designing database schema with proper migrations using Flyway',
+                'Building responsive quiz interface with real-time state management',
+                'Implementing role-based access control for admin functionality',
+                'Setting up CI/CD pipeline with cloud deployment on Vercel and Render',
+                'Creating educational content management system with CRUD operations',
+                'Developing comprehensive error handling and user feedback systems'
+            ],
+            gallery: [
+                '../public/lgbtmythorfact/2.png',
+                '../public/lgbtmythorfact/3.png',
+                '../public/lgbtmythorfact/4.png',
+                '../public/lgbtmythorfact/5.png',
+                '../public/lgbtmythorfact/6.png',
+                '../public/lgbtmythorfact/7.png',
+                '../public/lgbtmythorfact/8.png',
+                '../public/lgbtmythorfact/9.png',
+                '../public/lgbtmythorfact/10.png',
+                '../public/lgbtmythorfact/11.png',
+                '../public/lgbtmythorfact/12.png',
+                '../public/lgbtmythorfact/13.png',
+                '../public/lgbtmythorfact/14.png',
+                '../public/lgbtmythorfact/15.png',
+                '../public/lgbtmythorfact/16.png'
+            ],
+            demoUrl: 'https://myth-or-fact-lgbtqia.vercel.app/',
+            codeUrl: 'https://github.com/Veras-D/MythOrFactLGBTQIA'
         }
     };
     
