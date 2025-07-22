@@ -488,6 +488,38 @@ function setupProjectModal() {
             ],
             demoUrl: 'https://github.com/Veras-D/discord-timestamp-generator/releases',
             codeUrl: 'https://github.com/Veras-D/discord-timestamp-generator'
+        },
+        'tarot-card-reader': {
+            title: 'Tarot Card Reader',
+            subtitle: 'Cross-Platform Desktop Application with .NET 8',
+            icon: 'fas fa-magic',
+            image: '../public/tarotApp/1.png',
+            description: 'A modern, cross-platform Tarot card application built with Avalonia UI and .NET 8. Features an intuitive interface for drawing and interpreting cards from the Major Arcana deck with beautiful card imagery, responsive design, and containerized deployment support.',
+            technologies: ['.NET 8', 'Avalonia UI', 'C#', 'MVVM Pattern', 'Docker', 'GitHub Actions', 'Unit Testing', 'Cross-Platform Development'],
+            features: [
+                '🃏 Draw random Tarot cards from the Major Arcana deck',
+                '🖼️ Beautiful card imagery with detailed visuals and interpretations',
+                '📱 Responsive design that adapts to various screen sizes',
+                '🌓 Elegant dark mode UI with modern aesthetics',
+                '🖥️ Cross-platform compatibility (Windows, Linux, macOS)',
+                '🐳 Docker support for containerized deployment',
+                '🔄 Automated CI/CD pipeline with GitHub Actions',
+                '🧪 Comprehensive unit testing with automated test runs'
+            ],
+            challenges: [
+                'Implementing cross-platform UI consistency with Avalonia framework',
+                'Creating responsive layouts that work across different operating systems',
+                'Setting up automated build and deployment pipeline for multiple platforms',
+                'Designing an intuitive MVVM architecture for maintainable code',
+                'Containerizing desktop application with proper Docker configuration'
+            ],
+            gallery: [
+                '../public/tarotApp/2.png',
+                '../public/tarotApp/3.png',
+                '../public/tarotApp/4.png'
+            ],
+            demoUrl: 'https://github.com/veras-d/DevOpsProject/releases',
+            codeUrl: 'https://github.com/veras-d/DevOpsProject'
         }
     };
     
