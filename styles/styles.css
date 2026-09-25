@@ -293,8 +293,9 @@ nav ul li.active a::after {
 .cta-section {
     text-align: center;
     padding: 80px 0;
-    background: linear-gradient(rgba(15, 7, 23, 0.7), rgba(15, 7, 23, 0.9)),
-        url("https://via.placeholder.com/1920x1080") center/cover no-repeat;
+    background: radial-gradient(circle at center, rgba(138, 43, 226, 0.15) 0%, rgba(15, 7, 23, 0.95) 70%),
+        linear-gradient(135deg, rgba(26, 13, 34, 0.9), rgba(15, 7, 23, 0.98));
+    border: 1px solid rgba(138, 43, 226, 0.2);
     border-radius: 16px;
     margin: 40px 0;
 }

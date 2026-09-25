@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         errorDiv.innerHTML = `
             <i class="fas fa-exclamation-circle"></i>
             <h3>Message Could Not Be Sent</h3>
-            <p>There was an error sending your message. Please try again later or contact me directly at ${email}.</p>
+            <p>There was an error sending your message. Please try again later or contact me directly at <a href="mailto:dveras2310@gmail.com">dveras2310@gmail.com</a>.</p>
             <button class="btn primary" id="try-again-btn">Try Again</button>
         `;
         

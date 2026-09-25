@@ -69,9 +69,49 @@ function setupProjectModal() {
     
     // Project data
     const projectData = {
+        'cv-maker': {
+            title: 'CV Maker & Role Tracker',
+            subtitle: 'Modern ATS CV Generator & AI Role Tailoring Desktop App',
+            icon: 'fa-solid fa-file-invoice',
+            image: '../public/cvMaker/0.png',
+            description: 'A modern, high-performance desktop application and career management hub built with Tauri v2, Rust, and React 18. Features an <strong>Applicant Tracking System (ATS) compliant pure-vector PDF engine</strong>, a <strong>100% local client-side RAG & semantic role-tailoring suite</strong>, a multi-source profile ingestion engine (PDF, Markdown, GitHub, Web), a drag-and-drop job application Kanban pipeline, and an obsidian dark theme built for speed and complete data privacy.',
+            technologies: [
+                'React 18',
+                'TypeScript',
+                'Tauri v2',
+                'Rust',
+                'Tailwind CSS',
+                'jsPDF',
+                'pdf-lib',
+                'Local RAG & BM25',
+                'Docker',
+                'GitHub Actions CI/CD'
+            ],
+            features: [
+                '🎯 <strong>100% Pure Vector PDF Engine:</strong> Crisp vector text generation using jsPDF & pdf-lib with embedded Dublin Core metadata, zero raster artifacts, and full ATS parseability.',
+                '🤖 <strong>100% Local Semantic RAG & ATS Matcher:</strong> Zero cloud API dependencies. Client-side BM25 inverted index, vector cosine TF-IDF scoring with a 2,500+ tech lexicon, and instant tailored cover letter synthesis.',
+                '📥 <strong>Multi-Source Profile Ingestion:</strong> Drag-and-drop import for PDF/JSON/MD resumes, GitHub repository analysis, and web portfolio scraping.',
+                '📋 <strong>Job Application Kanban Board:</strong> Visual pipeline tracker with native HTML5 drag-and-drop, date pickers, currency masking, and permanent delete confirmation guards.',
+                '🖥️ <strong>Cross-Platform Desktop App:</strong> Lightweight Rust core powered by Tauri v2 with standalone Linux AppImage, Debian (.deb), macOS (.dmg), and Windows (.msi/.exe) builds.',
+                '🛡️ <strong>5-Stage Automated Quality & Security Gate:</strong> Strict cyclomatic complexity limits (≤12), function line caps (≤150), zero-any enforcement, Gitleaks secret scanning, and automated release CI/CD.'
+            ],
+            challenges: [
+                'Designing a 100% local semantic search and TF-IDF cosine scoring engine in pure TypeScript without relying on external cloud APIs or latency.',
+                'Generating pristine vector-based PDFs with exact coordinate geometry and Dublin Core metadata injection.',
+                'Configuring multi-platform desktop packaging using Tauri v2 and multi-stage Docker builds with zero host library dependencies.'
+            ],
+            gallery: [
+                '../public/cvMaker/0.png',
+                '../public/cvMaker/1.png',
+                '../public/cvMaker/2.png',
+                '../public/cvMaker/3.png'
+            ],
+            demoUrl: 'https://github.com/Veras-D/CV_Maker/releases/tag/v1.0.0',
+            codeUrl: 'https://github.com/Veras-D/CV_Maker'
+        },
         'network-limiter': {
             title: 'Network Limiter',
-            subtitle: 'Chrome extention application',
+            subtitle: 'Chrome extension application',
             icon: 'fa-brands fa-chrome',
             image: '../public/chromeExtention/chrome-02.png',
             description: 'The <strong>Network Limiter for DevTools</strong> is a browser extension that allows developers to <strong>simulate different network speeds</strong> directly within Chrome\'s Developer Tools. It provides three modes for network speed simulation: <strong>Slow</strong>, <strong>Medium</strong>, and <strong>Fast</strong>. Additionally, you can disable the limitation altogether with the <strong>No Limit</strong> mode.',

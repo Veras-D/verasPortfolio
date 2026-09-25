@@ -63,8 +63,17 @@ function typingEffect() {
     setTimeout(typeWriter, 500);
 }
 
+function updateCopyrightYear() {
+    const copyrightElements = document.querySelectorAll('.copyright p');
+    const currentYear = new Date().getFullYear();
+    copyrightElements.forEach(el => {
+        el.innerHTML = `&copy; ${currentYear} VERAS. All rights reserved.`;
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     setActiveNav();
     animateOnScroll();
     typingEffect();
+    updateCopyrightYear();
 });
