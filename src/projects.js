@@ -106,7 +106,7 @@ function setupProjectModal() {
                 '../public/cvMaker/2.png',
                 '../public/cvMaker/3.png'
             ],
-            demoUrl: 'https://github.com/Veras-D/CV_Maker/releases/tag/v1.0.0',
+            demoUrl: 'https://github.com/Veras-D/CV_Maker/releases/latest',
             codeUrl: 'https://github.com/Veras-D/CV_Maker'
         },
         'network-limiter': {
