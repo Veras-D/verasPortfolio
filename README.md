@@ -14,7 +14,7 @@ A personal portfolio website showcasing my skills, projects, and experience as a
 
 ## 📋 Overview
 
-This portfolio website highlights my full-stack software development projects, technical skills, and engineering methodology. It features a modern, responsive design emphasizing AI-augmented software delivery, fast architectural exploration, rigorous quality standards, AI-generated code auditing, and refactoring fragile "vibe-coded" prototypes into production-grade systems.
+This portfolio website highlights my full-stack software development projects, technical skills, and engineering methodology. It features a modern, responsive design emphasizing AI-augmented software delivery, fast architectural exploration, rigorous quality standards, AI-generated code auditing, and refactoring fragile vibe-coded prototypes into production-grade systems.
 
 ## 🛠️ Technologies Used
 
