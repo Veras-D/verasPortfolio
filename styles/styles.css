@@ -59,6 +59,10 @@ ul {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .primary {

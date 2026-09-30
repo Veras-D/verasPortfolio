@@ -251,6 +251,11 @@
     gap: 10px;
     width: 100%;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 14px 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
 }
 
 .submit-btn i {
