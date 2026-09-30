@@ -20,6 +20,64 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize EmailJS
     emailjs.init('qRBe4fLcF0QmDBYW2');
+
+    // Handle Custom Select Dropdown
+    const customSelectWrapper = document.querySelector('.custom-select-wrapper');
+    if (customSelectWrapper) {
+        const trigger = customSelectWrapper.querySelector('.custom-select-trigger');
+        const textSpan = customSelectWrapper.querySelector('.custom-select-text');
+        const nativeSelect = customSelectWrapper.querySelector('select');
+        const options = customSelectWrapper.querySelectorAll('.custom-option');
+        const placeholderText = 'Select what you need help with';
+
+        function closeSelect() {
+            customSelectWrapper.classList.remove('open');
+            trigger.setAttribute('aria-expanded', 'false');
+        }
+
+        function toggleSelect() {
+            const isOpen = customSelectWrapper.classList.toggle('open');
+            trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+
+        trigger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleSelect();
+        });
+
+        trigger.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleSelect();
+            } else if (e.key === 'Escape') {
+                closeSelect();
+            }
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const value = this.getAttribute('data-value');
+                const label = this.textContent.trim();
+
+                nativeSelect.value = value;
+                textSpan.textContent = label;
+                textSpan.classList.remove('is-placeholder');
+
+                options.forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+
+                closeSelect();
+                nativeSelect.dispatchEvent(new Event('change'));
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!customSelectWrapper.contains(e.target)) {
+                closeSelect();
+            }
+        });
+    }
     
     // Handle form submission with EmailJS
     const contactForm = document.getElementById('contact-form');
@@ -91,6 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
             formContainer.style.display = 'block';
             successDiv.style.display = 'none';
             contactForm.reset();
+            if (customSelectWrapper) {
+                const textSpan = customSelectWrapper.querySelector('.custom-select-text');
+                const options = customSelectWrapper.querySelectorAll('.custom-option');
+                textSpan.textContent = 'Select what you need help with';
+                textSpan.classList.add('is-placeholder');
+                options.forEach(opt => opt.classList.remove('selected'));
+            }
         });
     }
     

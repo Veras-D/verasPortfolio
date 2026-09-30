@@ -135,13 +135,25 @@
 
                             <div class="form-group">
                                 <label for="subject">Project Type / Inquiry</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" disabled selected>Select what you need help with</option>
-                                    <option value="Full-Stack Web or Desktop Development">Full-Stack Development (Web / Desktop)</option>
-                                    <option value="AI Code Audit & Hardening">AI Code Audit &amp; Hardening</option>
-                                    <option value="Vibe-Coded Project Cleanup">Vibe-Coded Project Cleanup</option>
-                                    <option value="General Inquiry / Collaboration">General Inquiry / Collaboration</option>
-                                </select>
+                                <div class="custom-select-wrapper">
+                                    <select id="subject" name="subject" class="visually-hidden" required>
+                                        <option value="" disabled selected>Select what you need help with</option>
+                                        <option value="Full-Stack Web or Desktop Development">Full-Stack Development (Web / Desktop)</option>
+                                        <option value="AI Code Audit & Hardening">AI Code Audit &amp; Hardening</option>
+                                        <option value="Vibe-Coded Project Cleanup">Vibe-Coded Project Cleanup</option>
+                                        <option value="General Inquiry / Collaboration">General Inquiry / Collaboration</option>
+                                    </select>
+                                    <div class="custom-select-trigger" tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+                                        <span class="custom-select-text is-placeholder">Select what you need help with</span>
+                                        <i class="fas fa-chevron-down custom-select-arrow"></i>
+                                    </div>
+                                    <div class="custom-select-options" role="listbox">
+                                        <div class="custom-option" role="option" data-value="Full-Stack Web or Desktop Development">Full-Stack Development (Web / Desktop)</div>
+                                        <div class="custom-option" role="option" data-value="AI Code Audit & Hardening">AI Code Audit &amp; Hardening</div>
+                                        <div class="custom-option" role="option" data-value="Vibe-Coded Project Cleanup">Vibe-Coded Project Cleanup</div>
+                                        <div class="custom-option" role="option" data-value="General Inquiry / Collaboration">General Inquiry / Collaboration</div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="form-group">
