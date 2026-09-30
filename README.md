@@ -59,7 +59,7 @@ This portfolio website highlights my full-stack software development projects, t
 ## 🚀 Features
 
 - **AI-Assisted Engineering**: Emphasizes modern AI workflows for faster code delivery, rapid technical exploration, and strict automated quality gates
-- **AI Code Review & Vibe-Code Rescue**: Specialized services for auditing AI-generated codebases (quality & security) and stabilizing/refactoring fragile vibe-coded MVPs
+- **AI Code Audits & Hardening**: Specialized services for auditing AI-generated codebases (security & quality) and refactoring vibe-coded MVPs for production
 - **Responsive Design**: Optimized for various screen sizes and devices
 - **Portfolio Showcase**: Highlights my development projects
 - **Skills Section**: Displays my technical skills and expertise
