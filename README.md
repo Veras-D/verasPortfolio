@@ -6,7 +6,7 @@
 
 # Vivi Veras Portfolio
 
-A personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer.
+A personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer specializing in AI-assisted engineering, rapid technical exploration, and clean code delivery.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/81cfcdc9-ba8a-4709-b78e-0aa62003a484" alt="Website Preview">
@@ -14,7 +14,7 @@ A personal portfolio website showcasing my skills, projects, and experience as a
 
 ## 📋 Overview
 
-This portfolio website is designed to highlight my skills and projects in software development. It features a clean, modern design with responsive layouts and interactive elements.
+This portfolio website highlights my full-stack software development projects, technical skills, and engineering methodology. It features a modern, responsive design that emphasizes AI-augmented software delivery, fast architectural exploration, and rigorous automated quality standards.
 
 ## 🛠️ Technologies Used
 
@@ -58,6 +58,7 @@ This portfolio website is designed to highlight my skills and projects in softwa
 
 ## 🚀 Features
 
+- **AI-Assisted Engineering**: Emphasizes modern AI workflows for faster code delivery, rapid technical exploration, and strict automated quality gates
 - **Responsive Design**: Optimized for various screen sizes and devices
 - **Portfolio Showcase**: Highlights my development projects
 - **Skills Section**: Displays my technical skills and expertise
